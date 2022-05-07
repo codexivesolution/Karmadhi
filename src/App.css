@@ -1,0 +1,733 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+body {
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+label {
+    margin-bottom: 0px !important;
+}
+
+/*  <========  HomePage CSS Start  ========>  */
+
+.CustomContainer {
+    max-width: 1920px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container {
+    max-width: 1600px !important;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.Sliderbg {
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+
+.SliderTwo {
+    top: 241px;
+    left: 0px;
+    z-index: 111;
+    width: 100%;
+}
+
+.SliderTwo .HomeMainSlider {
+    max-width: 370px;
+    width: 100%;
+}
+
+.SliderTwo .SliderInnerContent {
+    padding: 16px 35px;
+
+}
+
+.SliderTwo .SliderInnerContent h3 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    height: 36px;
+    line-height: 36px;
+    color: #FFFFFF;
+}
+
+.SliderTwo .SliderInnerContent p {
+    max-width: 310px;
+    width: 100%;
+    height: 54px;
+    line-height: 27px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    color: #F4F4F4;
+}
+
+.SliderTwo .HomeMainSlider .slick-list {
+    height: 70%;
+}
+
+.HomeMainSlider .slick-current {
+    background: rgba(0, 0, 75, 0.4);
+    border-radius: 4px;
+    border-left: 4px solid #1ab999 !important;
+}
+
+.mainHomeContent .bgimg {
+    background: linear-gradient(180deg, #000032 0%, #00004B 100%);
+    opacity: 0.4;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.mainHomeContent img {
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+
+.HomeMainSlider .slick-prev {
+    top: -49px;
+    left: 169px;
+    transform: rotate(90deg);
+}
+
+.HomeMainSlider .slick-next {
+    top: auto !important;
+    bottom: -15px;
+    right: 185px;
+    transform: rotate(90deg);
+}
+
+.HomeMainSlider .slick-prev::before {
+    position: absolute;
+    content: "" !important;
+    background-image: url(./img/icone/chevron-up.svg);
+    width: 27.28px;
+    height: 16.53px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transform: rotate(-90deg);
+}
+
+.HomeMainSlider .slick-next::before {
+    position: absolute;
+    content: "" !important;
+    background-image: url(./img/icone/chevron-up.svg);
+    width: 27.28px;
+    height: 16.53px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transform: rotate(90deg);
+}
+
+.fixed-custom-header {
+    position: absolute !important;
+    top: 20px;
+    z-index: 999;
+    width: 100%;
+}
+
+.mainHomeContent .SliderRow {
+    margin-top: 300px;
+}
+
+.mainHomeContent .SliderRow .sliderInnerText {
+    max-width: 565px;
+    width: 100%;
+}
+
+.mainHomeContent .SliderRow .sliderInnerText h3 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 62px;
+    color: #FFFFFF;
+    padding-bottom: 24px;
+}
+
+.mainHomeContent .SliderRow .sliderInnerText p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    color: #F4F4F4;
+}
+
+.mainHomeContent .SliderRow .sliderInnerText button {
+    width: 225px;
+    height: 63px;
+    background-color: #1ab999;
+    box-shadow: 0px 0px 12px 2px #1ab999;
+    border-radius: 5px;
+    color: #FFFFFF;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    border: none;
+    margin-top: 46px;
+}
+
+.jobConversation img {
+    width: 100%;
+}
+
+.jobConversation .JobconversationInner {
+    position: absolute;
+    top: 0px;
+    background: #00004B;
+    opacity: 0.3;
+    width: 100%;
+    height: 352px;
+}
+
+.jobConversation .JobConversationTitle {
+    position: absolute;
+    z-index: 2;
+    top: 131px;
+    left: 137px;
+}
+
+.jobConversation .JobConversationTitle h3 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    color: #F9F9F9;
+}
+
+.jobConversation .JobConversationTitle p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #F4F4F4;
+    max-width: 316px;
+    width: 100%;
+    height: 48px;
+    line-height: 24px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 16px !important;
+}
+
+.jobConversation .HoverJobCard {
+    transition: all 0.3s ease-in-out;
+}
+
+.jobConversation .HoverJobCard:hover {
+    transform: scale(1.1);
+    z-index: 111;
+}
+
+
+.NewtechContentbox {
+    padding: 115px 0px 115px 0px;
+}
+
+.NewtechContentbox .NewTechInnerctn .NewTechTitleandContent h3 {
+    max-width: 212px;
+    width: 100%;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    height: 36px;
+    line-height: 36px;
+    text-align: end;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    position: relative;
+    margin-bottom: 8px !important;
+    color: #1ab999;
+}
+
+.NewtechContentbox .NewTechInnerctn .NewTechTitleandContent h3::before {
+    position: absolute;
+    content: "";
+    width: 46px;
+    height: 2px;
+    left: 0px;
+    background-color: #1ab999;
+    top: 18px;
+}
+
+.NewtechContentbox .NewTechInnerctn .NewTechTitleandContent h2 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    max-width: 656px;
+    width: 100%;
+    height: 104px;
+    line-height: 52px;
+    color: #202020;
+    margin-bottom: 24px !important;
+}
+
+.NewtechContentbox .NewTechInnerctn .NewTechTitleandContent p {
+    max-width: 672px;
+    width: 100%;
+    height: 96px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #202020;
+    margin-bottom: 42px !important;
+}
+
+.NewtechContentbox .NewTechInnerctn .NewTechTitleandContent p span {
+    color: #1ab999;
+}
+
+.NewtechContentbox .NewTechInnerctn .NewTechTitleandContent button {
+    width: 206px;
+    height: 64px;
+    background: #1ab999;
+    border-radius: 5px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    border: none;
+    color: #FFFFFF;
+    text-decoration: none !important;
+}
+
+.NewtechContentbox .NewTechInnerctn .NewTechTitleandContent button:hover {
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.NewtechContentbox .NewTechSlider {
+    width: 764px;
+    height: 422px;
+    margin: 0 auto;
+}
+
+.NewtechContentbox .NewTechSlider .sliderContent img {
+    width: 100%;
+    height: 422px;
+    border-radius: 12px;
+}
+
+.NewtechContentbox .slick-prev {
+    left: -40px;
+}
+
+.NewtechContentbox .slick-next {
+    right: -40px;
+}
+
+.NewtechContentbox .slick-prev:before {
+    content: "";
+    position: absolute;
+    background-image: url(./img/icone/SliderArrow.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 16px;
+    height: 16px;
+    top: 3px;
+    right: 3px;
+}
+
+.NewtechContentbox .slick-next:before {
+    content: "";
+    position: absolute;
+    background-image: url(./img/icone/SliderArrow.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transform: rotate(-180deg);
+    width: 16px;
+    height: 16px;
+    top: 3px;
+    left: 3px;
+}
+
+.NewTechSlider .sliderContent .imgLayer {
+    position: absolute;
+    background: linear-gradient(180deg, #000032 0%, #00004B 100%);
+    opacity: 0.4;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+}
+
+.NewTechSlider .NewPostHighLightContent {
+    position: absolute;
+    z-index: 2;
+    top: 285px;
+    left: 59px;
+    max-width: 245px;
+    width: 100%;
+}
+
+.NewTechSlider .NewPostHighLightContent h2 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    height: 36px;
+    line-height: 36px;
+    color: #FFFFFF;
+    margin: 4px 0px 4px 0px !important;
+}
+
+.NewTechSlider .NewPostHighLightContent p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    height: 24px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+.sliderLogo {
+    background: #F9F9F9;
+}
+
+.sliderLogo .SliderLogoContent {
+    padding: 93px 0px 93px 0px;
+    text-align: center;
+}
+
+.sliderLogo .SliderLogoContent h3 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    height: 36px;
+    line-height: 36px;
+    color: #1ab999;
+    margin-bottom: 8px !important;
+}
+
+.sliderLogo .SliderLogoContent h2 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    height: 52px;
+    line-height: 52px;
+    color: #202020;
+    margin-bottom: 71px !important;
+}
+
+.sliderLogo .logoinnerSlider .slick-slider .slick-list {
+    height: 75px;
+}
+
+.sliderLogo .logoinnerSlider .slick-slider .slick-slide {
+    margin-right: 55px;
+}
+
+.sliderLogo .logoinnerSlider .sliderinnerImg {
+    max-width: 288px;
+    width: 100%;
+}
+
+.sliderLogo .logoinnerSlider .sliderinnerImg img {
+    width: 100%;
+    height: 75px;
+}
+
+.OurProjectContent {
+    background-image: url(./img/bg/project.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.OurProjectContent .projectLayer {
+    position: absolute;
+}
+
+.OurProjectContent .OurProjectInnerctn {
+    padding: 91px 0px 107px 150px;
+}
+
+.OurProjectContent .OurProjectInnerctn .ourProjectInnerTitle h3 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: #1ab999;
+    height: 36px;
+    line-height: 36px;
+    margin-bottom: 16px !important;
+}
+
+.OurProjectContent .OurProjectInnerctn .ourProjectInnerTitle p {
+    max-width: 672px;
+    width: 100%;
+    height: 48px;
+    line-height: 24px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #FFFFFF;
+    margin-bottom: 36px !important;
+}
+
+.OurProjectContent .OurProjectInnerctn .ourProjectInnerTitle button {
+    width: 257px;
+    height: 64px;
+    background-color: #1ab999;
+    border-radius: 5px;
+    color: #FFFFFF;
+    border: none;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.OurProjectContent .OurProjectInnerctn .ourProjectInnerTitle {
+    margin-bottom: 50px;
+}
+
+/* .OurProjectContent .OurProjectInnerctn .ProjectSliderBox .slick-slide {
+    max-width: 877px;
+    width: 100% !important;
+} */
+
+.OurProjectContent .OurProjectInnerctn .ProjectSliderBox .projectSliderImgbox .ourProjectSupporter {
+    position: absolute;
+    top: 300px;
+    left: 60px;
+}
+
+.OurProjectContent .OurProjectInnerctn .ProjectSliderBox .projectSliderImgbox .ourProjectSupporter p {
+    color: #1ab999;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+}
+
+.OurProjectContent .OurProjectInnerctn .ProjectSliderBox .projectSliderImgbox .ourProjectSupporter p span,
+.OurProjectContent .projectSliderImgbox .projectOverlay h3 .hoverProjecttitle {
+    color: #FFFFFF;
+    letter-spacing: 0px;
+    text-transform: none;
+}
+
+.OurProjectContent .OurProjectInnerctn .ProjectSliderBox .projectSliderImgbox {
+    max-width: 764px;
+    width: 100% !important;
+    height: 422px;
+    position: relative;
+}
+
+.OurProjectContent .OurProjectInnerctn .ProjectSliderBox .projectSliderImgbox .ProjectSliderLayer {
+    position: absolute;
+    background: #00004B;
+    opacity: 0.5;
+    border-radius: 0px 0px 12px 12px;
+    width: 764px;
+    height: 172px;
+    bottom: 0px;
+}
+
+.OurProjectContent .OurProjectInnerctn .ProjectSliderBox .projectSliderImgbox img {}
+
+.ProjectSliderBox .projectSliderImgbox .projectOverlay .overlayBg {
+    position: absolute;
+    top: 0px;
+    background: #00004B;
+    opacity: 0;
+    border-radius: 12px;
+    height: 422px;
+    width: 764px;
+    transition: all 0.5s ease-in;
+    padding: 52px 62px 52px 55px;
+}
+
+
+.ProjectSliderBox .projectSliderImgbox .projectOverlay {
+    position: absolute;
+    top: 0px;
+}
+
+.OurProjectContent .projectSliderImgbox:hover .projectOverlay .overlayBg {
+    opacity: 1;
+}
+
+.OurProjectContent .projectSliderImgbox .projectOverlay h3 {
+    color: #1ab999;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    z-index: 2;
+    margin-bottom: 24px !important;
+}
+
+.OurProjectContent .projectSliderImgbox .projectOverlay .projectHover p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #FFFFFF;
+    max-width: 672px;
+    width: 100%;
+    height: 72px;
+    overflow: hidden;
+    margin-bottom: 12px !important;
+}
+
+.OurProjectContent .projectSliderImgbox .projectOverlay .projectHover .hoverHase {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    color: #1ab999;
+}
+
+.OurProjectContent .projectSliderImgbox .projectOverlay .projectHover .projectHoverBtn {
+    margin-top: 50px;
+}
+
+.OurProjectContent .projectSliderImgbox .projectOverlay .projectHover .projectHoverBtn button {
+    width: 213px;
+    height: 64px;
+    border-radius: 5px;
+    border: none;
+    background: #1ab999;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.typeIndustry .TypeIdustryInner {
+    padding: 155px 0px 155px 0px;
+}
+
+.typeIndustry .TypeIdustryInner .TypeIndustryInnerContent h3 {
+    text-align: center;
+    color: #1ab999;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    height: 36px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    margin-bottom: 10px !important;
+}
+
+.typeIndustry .TypeIdustryInner .TypeIndustryInnerContent .viewContent {
+    margin-bottom: 60px;
+}
+
+.typeIndustry .TypeIdustryInner .TypeIndustryInnerContent .viewContent p {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 40px;
+    color: #202020;
+    height: 40px;
+}
+
+.typeIndustry .TypeIdustryInner .TypeIndustryInnerContent .viewContent button {
+    width: 105px;
+    height: 40px;
+    background: transparent;
+    color: #202020;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    border: none;
+    transition: all 0.3s ease-in;
+}
+
+.typeIndustry .TypeIdustryInner .TypeIndustryInnerContent .viewContent button:hover {
+    background: #1ab999;
+    color: #FFFFFF;
+    border-radius: 5px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.typeIndustry .TypeIdustryInner .industryGird {
+    position: relative;
+}
+
+.typeIndustry .TypeIdustryInner .industryGird .IndustryInnerEffect {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 40px 0px 40px;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    top: auto;
+    bottom: 50px;
+}
+
+
+.industryGird .IndustryEffectContent .IndustryInnerEffect h2 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    color: #FFFFFF;
+    max-width: 312px;
+    height: 36px;
+}
+
+.industryGird .IndustryEffectContent .industryBg {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background: #00004B;
+    opacity: 0.3;
+    border-radius: 12px;
+}
+
+.typeIndustry .TypeIdustryInner .industryGird img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+.typeIndustry .TypeIdustryInner .IndustryRow {
+    padding-top: 34px;
+}
+
+.typeIndustry .TypeIdustryInner .IdustryZoeEffect {
+    position: relative;
+}
+
+.useSoftwareSlider {
+    padding: 79px 53px 79px 53px;
+    background: #F9F9F9;
+}
+
+/*  <========  HomePage CSS End  ========>  */

@@ -6,8 +6,8 @@ import './index.css';
 import './helper/i18n/index'
 import './Responsive.css';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
-// import "../node_modules/slick-carousel/slick/slick.css";
-// import "../node_modules/slick-carousel/slick/slick-theme.css";
+import "../node_modules/slick-carousel/slick/slick.css";
+import "../node_modules/slick-carousel/slick/slick-theme.css";
 import "../node_modules/react-datepicker/dist/react-datepicker.css";
 // import '../node_modules/react-draft-wysiwyg/dist/react-draft-wysiwyg.css'
 import "../node_modules/froala-editor/css/froala_style.min.css";
@@ -19,6 +19,7 @@ import "../node_modules/froala-editor/js/third_party/embedly.min.js";
 import "../node_modules/tributejs/dist/tribute.css";
 import 'froala-editor/css/froala_style.min.css';
 import 'froala-editor/css/froala_editor.pkgd.min.css';
+import './layouts/Layout.css';
 
 ReactDOM.render(
   <React.StrictMode>

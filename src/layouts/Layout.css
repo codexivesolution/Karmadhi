@@ -1,0 +1,163 @@
+.footerMainClass {
+    background-color: #202020;
+}
+
+.footerMainClass .footerMainContent {
+    display: flex;
+    justify-content: space-between;
+    padding: 46px 0px 91px 0px;
+    border-bottom: 1px solid #1ab999;
+}
+
+.footerMainClass .footerMainContent .footerImg img {
+    width: 200px;
+    margin-bottom: 23px;
+}
+
+.footerMainClass .footerMainContent .Copyright {
+    max-width: 221px;
+}
+
+.footerMainClass .footerMainContent .Copyright p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    color: #1ab999;
+    text-align: center;
+}
+
+.footerMainClass .footerMainContent .footerBlogContent {
+    max-width: 377px;
+    width: 100%;
+}
+
+.footerMainClass .footerMainContent .footerService {
+    max-width: 276px;
+    width: 100%;
+}
+
+.footerMainClass .footerMainContent .footerFollow {
+    max-width: 112px;
+    width: 100%;
+}
+
+.footerMainClass .footerMainContent .footernewSletter {
+    max-width: 335px;
+    width: 100%;
+}
+
+.footerMainClass .footerMainContent .footerBlogContent h2,
+.footerMainClass .footerMainContent .footerService h2,
+.footerMainClass .footerMainContent .footerFollow h2,
+.footerMainClass .footerMainContent .footernewSletter h2 {
+    color: #1ab999;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    height: 27px;
+    line-height: 27px;
+    margin-bottom: 20px !important;
+}
+
+.footerMainClass .footerMainContent .footerFollow a {
+    text-decoration: none;
+    color: #FFFFFF;
+    margin-left: 12px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.footerMainClass .footerMainContent .footerFollow .FooterLink {
+    margin-bottom: 8px;
+}
+
+.footerMainClass .footerMainContent .footernewSletter input {
+    width: 100%;
+    height: 54px;
+    border-radius: 5px;
+    padding: 15px 110px 15px 20px;
+    outline: none;
+    border: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #BDBDBD;
+}
+
+.footerMainClass .footerMainContent .footernewSletter button {
+    position: absolute;
+    right: 2px;
+    width: 105px;
+    height: 50px;
+    top: 2px;
+    border: none;
+    background-color: #1ab999;
+    color: #FFFFFF;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.footerMainClass .footerMainContent .footernewSletter button:hover {
+    box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+}
+
+.footerMainClass .footerMainContent .footernewSletter input::placeholder {
+    color: #BDBDBD;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.footerMainClass .footerMainContent .footernewSletter p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    height: 48px;
+    overflow: hidden;
+    margin-bottom: 20px !important;
+}
+
+.footerMainClass .footerMainContent .footerBlogContent p,
+.footerMainClass .footerMainContent .footerService p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #FFFFFF;
+    margin-bottom: 8px !important;
+    line-height: 24px;
+}
+
+.footerMainClass .footerMainContent .footerBlogContent p:last-child,
+.footerMainClass .footerMainContent .footerService p:last-child {
+    margin-bottom: 0px !important;
+}
+
+.footerMainClass .footercookiesbox {
+    padding: 36px 0px 36px 0px;
+    max-width: 565px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.footerMainClass .footercookiesbox a {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    height: 24px;
+    line-height: 24px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.footerMainClass .footercookiesbox span {
+    width: 2px;
+    height: 18px;
+    background: #1ab999;
+}

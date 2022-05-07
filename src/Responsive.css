@@ -1,0 +1,20 @@
+@media (max-width:991px) {
+    .HomeMainSlider {
+        display: none;
+    }
+
+    .mainHomeContent .SliderRow {
+        margin-top: 150px;
+    }
+
+    .mainHomeContent .SliderRow .sliderInnerText {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .fixed-custom-header {
+        padding: 0px !important;
+    }
+
+
+}
