@@ -11,7 +11,7 @@ const Layout: FC<Props> = ({ children, ...props }) => {
     const { is_loggedin } = useSelector((state: RootStateOrAny) => state.login)
     return (
         <div className="">
-             <Header />
+            <Header />
             <div className="" {...props}>{children}</div>
             <Footer />
         </div>

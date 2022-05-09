@@ -43,6 +43,7 @@ label {
     height: 100vh;
     background-position: center;
     background-size: cover;
+    overflow: hidden;
 }
 
 .SliderTwo {
@@ -100,7 +101,7 @@ label {
     position: absolute;
 }
 
-.mainHomeContent img {
+.mainHomeContent .sliderbgimg {
     height: 100vh;
     width: 100%;
     object-fit: cover;
@@ -189,6 +190,26 @@ label {
     font-size: 18px;
     border: none;
     margin-top: 46px;
+}
+
+
+.mainHomeContent .LayerBg .layerbgimg {
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    z-index: 99;
+    height: 218px;
+}
+
+.mainHomeContent .LayerBg .layerbgimgtwo {
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    z-index: 99;
+}
+
+.mainHomeContent .slick-slider {
+    height: 100vh;
 }
 
 .jobConversation img {
@@ -448,6 +469,11 @@ label {
 .sliderLogo .logoinnerSlider .sliderinnerImg img {
     width: 100%;
     height: 75px;
+    filter: grayscale(100%);
+}
+
+.sliderLogo .logoinnerSlider .sliderinnerImg img:hover {
+    filter: grayscale(0%);
 }
 
 .OurProjectContent {
@@ -730,4 +756,239 @@ label {
     background: #F9F9F9;
 }
 
+
 /*  <========  HomePage CSS End  ========>  */
+.jobConversation {
+    z-index: 999;
+}
+
+/*  OurSevice Banner CSS Start  */
+
+.OurServiceBanner {
+    background-image: url(./img/bg/Intersect.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 668px;
+}
+
+.OurServiceBanner .Overlayer,
+.mainOurServiceBenner .OurServiceBanner .overLayerbg {
+    position: absolute;
+}
+
+.mainOurServiceBenner .OurServiceBanner .overLayerbg .BannerLayer2 {
+    position: relative;
+}
+
+.mainOurServiceBenner .OurServiceBanner .overLayerbg .BannerLayer {
+    position: absolute;
+    top: -111px;
+}
+
+.mainOurServiceBenner .OurServiceBanner .overLayerbg {
+    bottom: 0px;
+}
+
+
+
+.mainOurServiceBenner .OurServiceBanner .mainBenner .BannerTitle {
+    padding-top: 243px;
+    text-align: center;
+    position: relative;
+    z-index: 999;
+}
+
+
+.mainOurServiceBenner .OurServiceBanner .mainBenner .BannerTitle h3 {
+    height: 93px;
+    line-height: 93px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 62px;
+    color: #FFFFFF;
+    max-width: fit-content;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    margin-bottom: 24px !important;
+}
+
+.mainOurServiceBenner .OurServiceBanner .mainBenner .BannerTitle h3::after {
+    position: absolute;
+    content: "";
+    width: 46px;
+    height: 2px;
+    background-color: #1ab999;
+    top: 46px;
+    left: -60px;
+}
+
+
+.mainOurServiceBenner .OurServiceBanner .mainBenner .BannerTitle p {
+    max-width: 565px;
+    width: 100%;
+    height: 60px;
+    line-height: 30px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    color: #F4F4F4;
+    margin: 0 auto;
+}
+
+.OverServiceMainTitle {
+    padding-top: 24px;
+}
+
+.OverServiceMainTitle .mainLinkBox span {
+    margin: 0px 24px 0px 24px;
+}
+
+.OverServiceMainTitle .linkBox a {
+    max-width: fit-content;
+    width: 100%;
+    height: 27px;
+    line-height: 27px;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    color: #202020;
+}
+
+.OverServiceMainTitle .linkBox .active {
+    color: #1ab999;
+}
+
+.OverServiceMainTitle .mainOverServiceContent {
+    padding-top: 95px;
+    padding-bottom: 125px;
+}
+
+.OverServiceMainTitle .mainOverServiceContent .secDetailsContent h3 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    color: #1ab999;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    margin-bottom: 8px !important;
+}
+
+.OverServiceMainTitle .mainOverServiceContent .secDetailsContent p {
+    width: 100%;
+    height: 104px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 52px;
+    overflow: hidden;
+    margin-bottom: 8px !important;
+}
+
+.OverServiceMainTitle .mainOverServiceContent .secDetailsContent span {
+    max-width: 466px;
+    width: 100%;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    height: 72px;
+    line-height: 24px;
+}
+
+.OverServiceMainTitle .mainOverServiceContent .overServiceImg {
+    position: relative;
+    transition: all .5s ease-in;
+    backface-visibility: hidden;
+}
+
+.OverServiceMainTitle .mainOverServiceContent .overServiceImg img {
+    border-radius: 12px;
+    width: 100%;
+    height: 320px;
+}
+
+.OverServiceMainTitle .mainOverServiceContent .overServiceImg .OverserviceLayer {
+    position: absolute;
+    background: #00004B;
+    opacity: 0.7;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+}
+
+.OverServiceMainTitle .mainOverServiceContent .overServiceImg .overServiceDetails {
+    position: absolute;
+    bottom: 32px;
+    left: 32px;
+}
+
+.OverServiceMainTitle .mainOverServiceContent .overServiceImg:hover .overServiceDetails {
+    opacity: 0;
+}
+
+.OverServiceMainTitle .mainOverServiceContent .overServiceImg:hover .OverServiceHover {
+    opacity: 1;
+}
+
+.OverServiceMainTitle .mainOverServiceContent .overServiceImg .OverServiceHover {
+    position: absolute;
+    padding: 46px 32px 32px 32px;
+    width: 100%;
+    top: 0px;
+    opacity: 0;
+}
+
+.OverServiceMainTitle .mainOverServiceContent .overServiceImg .OverServiceHover .OverServiceHoverTitle {
+    padding-bottom: 32px;
+    border-bottom: 2px solid #FFFFFF;
+}
+
+.OverServiceMainTitle .mainOverServiceContent .overServiceImg .OverServiceHover .OverServiceHoverTitle h3 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    height: 36px;
+    line-height: 36px;
+}
+
+.OverServiceMainTitle .mainOverServiceContent .overServiceImg .OverServiceHover .HoverOverserviceDetails {
+    margin-top: 32px;
+}
+
+.OverServiceMainTitle .mainOverServiceContent .overServiceImg .OverServiceHover .HoverOverserviceDetails p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    height: 96px;
+    line-height: 24px;
+    color: #FFFFFF;
+    margin-bottom: 22px !important;
+    overflow: hidden;
+}
+
+.OverServiceMainTitle .mainOverServiceContent .overServiceImg .OverServiceHover .HoverOverserviceDetails span {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    height: 24px;
+    line-height: 24px;
+    color: #1ab999;
+}
+
+.OverServiceMainTitle .mainOverServiceContent .overServiceImg .overServiceDetails h3 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+.OverServiceMainTitle .mainOverServiceContent .overServiceSecRow {
+    margin-top: 42px;
+}
+
+/*  OurSevice Banner CSS End  */

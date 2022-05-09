@@ -161,3 +161,11 @@
     height: 18px;
     background: #1ab999;
 }
+
+/*  Header CSS start */
+
+.KarmadhiHeader .active {
+    color: #1ab999 !important;
+}
+
+/*  Header CSS end */

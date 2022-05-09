@@ -7,55 +7,47 @@ import AuthStorage from "../helper/AuthStorage";
 import Layout from "../layouts/Layout";
 import { changeLoginState } from "../redux/actions/loginAction";
 import Homepage from "./homepage/Homepage";
+import OurService from "./oursrvice/OurService";
 
 const Index = () => {
-  const pathname = ["",]
+  const pathname = ["ourservice",]
   const history = useHistory();
   const location = useLocation();
   const dispatch = useDispatch();
-  useEffect(() => {
-    if (AuthStorage.isUserAuthenticated()) {
-      ApiGet("user/validate")
-        .then((res) => {
-          dispatch(changeLoginState(true));
-        })
-        .catch((error) => {
-          AuthStorage.deauthenticateUser();
-          history.push("/");
-        });
-    }
-    else {
-      if (!pathname.includes(location.pathname)) {
-        history.push("/");
-      }
-    }
-  }, []);
+
 
   return (
     <>
 
       <Switch>
-        <Route
+        {/* <Route
           exact
           path={[
             "/",
-            "/homepage"
+            "/homepage",
+            "/ourservice"
           ]}
-        >
-          <Layout>
-            <Switch>
-              <RouteWrapper
-                exact={true}
-                path="/"
-                component={Homepage}
+        > */}
+        {/* <Layout> */}
+        <RouteWrapper
+          exact={true}
+          path="/"
+          component={Homepage}
+          layout={Layout}
+          isPrivateRoute={true}
+        />
 
-                isPrivateRoute={false}
-              />
+        <RouteWrapper
+          exact={true}
+          path="/ourservice"
+          component={OurService}
+          layout={Layout}
+          isPrivateRoute={true}
+        />
 
 
-            </Switch>
-          </Layout>
-        </Route>
+        {/* </Layout> */}
+        {/* </Route> */}
         <Route
           exact
           path={[
@@ -65,9 +57,9 @@ const Index = () => {
             "/Registration"
           ]}
         >
-         
+
         </Route>
-        
+
       </Switch>
     </>
   );
@@ -78,6 +70,8 @@ export default Index;
 interface RouteWrapperProps {
   component: any;
   exact: boolean;
+  layout: any;
+
   path: string;
   isPrivateRoute: boolean;
 }
@@ -85,6 +79,7 @@ interface RouteWrapperProps {
 function RouteWrapper({
   component: Component,
   isPrivateRoute,
+  layout: Layout,
   ...rest
 }: RouteWrapperProps) {
   const history = useHistory();
@@ -93,11 +88,17 @@ function RouteWrapper({
     : true;
   return (
     <>
-      {isAuthenticated ? (
-        <Route {...rest} render={(props) => <Component {...props} />} />
+      <Route {...rest} render={(props) =>
+        <Layout>
+          <Component {...props} />
+        </Layout>
+      } />
+
+      {/* {isAuthenticated ? (
+        <Route {...rest} render={(props) => <Layout> <Component {...props} /> </Layout>} />
       ) : (
         history.push("/")
-      )}
+      )} */}
     </>
   );
 }

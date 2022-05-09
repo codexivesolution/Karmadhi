@@ -56,6 +56,10 @@ export default function App() {
         <div className='CustomContainer'>
             <div className='container-fluid p-0'>
                 <div className='position-relative mainHomeContent'>
+                    <div className='LayerBg'>
+                        <img src='./img/layerbg/Subtracttwo.png' className='layerbgimg' />
+                        <img src='./img/layerbg/Subtract.png' className='layerbgimgtwo' />
+                    </div>
                     <div className=''>
                         <Slider
                             asNavFor={nav2}
@@ -64,7 +68,7 @@ export default function App() {
                         >
                             <div className='position-relative Sliderbg'>
                                 <div className='bgimg'></div>
-                                <img src="./img/sliderimg/home-1_slider-1_bg.jpg" alt='SliderOne' />
+                                <img src="./img/sliderimg/home-1_slider-1_bg.jpg" alt='SliderOne' className='sliderbgimg' />
                                 <Row className='SliderRow'>
                                     <Col lg={7}>
                                     </Col>
@@ -81,7 +85,7 @@ export default function App() {
                             </div>
                             <div className='position-relative Sliderbg'>
                                 <div className='bgimg'></div>
-                                <img src='./img/sliderimg/home-1_slider-2_bg.jpg' alt='SliderTwo' />
+                                <img src='./img/sliderimg/home-1_slider-2_bg.jpg' alt='SliderTwo' className='sliderbgimg' />
                                 <Row className='SliderRow'>
                                     <Col lg={7}>
                                     </Col>
@@ -100,7 +104,7 @@ export default function App() {
 
                             <div className='position-relative Sliderbg'>
                                 <div className='bgimg'></div>
-                                <img src="./img/sliderimg/home-1_slider-3_bg.jpg" alt='SliderThree' />
+                                <img src="./img/sliderimg/home-1_slider-3_bg.jpg" alt='SliderThree' className='sliderbgimg' />
                                 <Row className='SliderRow'>
                                     <Col lg={7}>
                                     </Col>
@@ -174,7 +178,10 @@ export default function App() {
                 </div>
             </div>
 
-            <div className='jobConversation'>
+            <div className='jobConversation position-relative'>
+                {/* <div className='LayerBg'>
+                    <img src='./img/layerbg/' />
+                </div> */}
                 <div>
                     <Row>
                         <Col lg={4} className="p-0">
@@ -223,37 +230,37 @@ export default function App() {
                         <div className='logoinnerSlider'>
                             <Slider {...logoSlider}>
                                 <div className='sliderinnerImg'>
-                                    <img src="./img/logo/sliderlogo1.svg" />
+                                    <img src="./img/logo/TLOGO-ORACLE.png" />
                                 </div>
                                 <div className='sliderinnerImg'>
-                                    <img src="./img/logo/Sliderlogo5.svg" />
+                                    <img src="./img/logo/Tlogo-nodejs.png" />
                                 </div>
                                 <div className='sliderinnerImg'>
-                                    <img src="./img/logo/Sliderlogo2.svg" />
+                                    <img src="./img/logo/Tlogo-redhat.png" />
                                 </div>
                                 <div className='sliderinnerImg'>
-                                    <img src="./img/logo/Sliderlogo3.svg" />
+                                    <img src="./img/logo/Tlogo-postgresql.png" />
                                 </div>
                                 <div className='sliderinnerImg'>
-                                    <img src="./img/logo/Sliderlogo4.svg" />
+                                    <img src="./img/logo/Tlogo-servicenow.png" />
                                 </div>
                                 <div className='sliderinnerImg'>
-                                    <img src="./img/logo/Tlogo-debian.png" />
+                                    <img src="./img/logo/Tlogo-ubuntu.png" />
                                 </div>
                                 <div className='sliderinnerImg'>
-                                    <img src="./img/logo/Tlogo-debian.png" />
+                                    <img src="./img/logo/Tlogo-vbnet.png" />
                                 </div>
                                 <div className='sliderinnerImg'>
-                                    <img src="./img/logo/Tlogo-debian.png" />
+                                    <img src="./img/logo/Tlogo-windowsserver.png" />
                                 </div>
                                 <div className='sliderinnerImg'>
-                                    <img src="./img/logo/Tlogo-debian.png" />
+                                    <img src="./img/logo/Tlogo-centos.png" />
                                 </div>
                                 <div className='sliderinnerImg'>
-                                    <img src="./img/logo/Tlogo-debian.png" />
+                                    <img src="./img/logo/Tlogo-java.png" />
                                 </div>
                                 <div className='sliderinnerImg'>
-                                    <img src="./img/logo/Tlogo-debian.png" />
+                                    <img src="./img/logo/Tlogo-microsoft-sql.png" />
                                 </div>
                                 <div className='sliderinnerImg'>
                                     <img src="./img/logo/Tlogo-debian.png" />
