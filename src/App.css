@@ -37,6 +37,12 @@ label {
     margin: 0 auto;
 }
 
+.smallContainer {
+    max-width: 1160px;
+    width: 100%;
+
+}
+
 .Sliderbg {
     background-repeat: no-repeat;
     width: 100%;
@@ -150,7 +156,7 @@ label {
 .fixed-custom-header {
     position: absolute !important;
     top: 20px;
-    z-index: 999;
+    z-index: 1500;
     width: 100%;
 }
 
@@ -267,7 +273,12 @@ label {
     padding: 115px 0px 115px 0px;
 }
 
-.NewtechContentbox .NewTechInnerctn .NewTechTitleandContent h3 {
+.OurServiceContentbox {
+    padding: 125px 0px 125px 0px;
+}
+
+.NewtechContentbox .NewTechInnerctn .NewTechTitleandContent h3,
+.OurServiceContentbox .OurServiceSliderCtn .NewTechTitleandContent h3 {
     max-width: 212px;
     width: 100%;
     font-style: normal;
@@ -283,6 +294,11 @@ label {
     color: #1ab999;
 }
 
+.OurServiceContentbox .OurServiceSliderCtn .NewTechTitleandContent h3 {
+    max-width: fit-content;
+    width: 100%;
+}
+
 .NewtechContentbox .NewTechInnerctn .NewTechTitleandContent h3::before {
     position: absolute;
     content: "";
@@ -293,7 +309,8 @@ label {
     top: 18px;
 }
 
-.NewtechContentbox .NewTechInnerctn .NewTechTitleandContent h2 {
+.NewtechContentbox .NewTechInnerctn .NewTechTitleandContent h2,
+.OurServiceContentbox .OurServiceSliderCtn .NewTechTitleandContent h2 {
     font-style: normal;
     font-weight: 700;
     font-size: 32px;
@@ -305,7 +322,8 @@ label {
     margin-bottom: 24px !important;
 }
 
-.NewtechContentbox .NewTechInnerctn .NewTechTitleandContent p {
+.NewtechContentbox .NewTechInnerctn .NewTechTitleandContent p,
+.OurServiceContentbox .OurServiceSliderCtn .NewTechTitleandContent p {
     max-width: 672px;
     width: 100%;
     height: 96px;
@@ -317,11 +335,13 @@ label {
     margin-bottom: 42px !important;
 }
 
-.NewtechContentbox .NewTechInnerctn .NewTechTitleandContent p span {
+.NewtechContentbox .NewTechInnerctn .NewTechTitleandContent p span,
+.OurServiceContentbox .OurServiceSliderCtn .NewTechTitleandContent p span {
     color: #1ab999;
 }
 
-.NewtechContentbox .NewTechInnerctn .NewTechTitleandContent button {
+.NewtechContentbox .NewTechInnerctn .NewTechTitleandContent button,
+.OurServiceContentbox .OurServiceSliderCtn .NewTechTitleandContent button {
     width: 206px;
     height: 64px;
     background: #1ab999;
@@ -336,31 +356,38 @@ label {
     text-decoration: none !important;
 }
 
-.NewtechContentbox .NewTechInnerctn .NewTechTitleandContent button:hover {
+.NewtechContentbox .NewTechInnerctn .NewTechTitleandContent button:hover,
+.OurServiceContentbox .OurServiceSliderCtn .NewTechTitleandContent button:hover,
+.OurServiceForm .mainFormContent .FloatingLabelbox button:hover {
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 }
 
-.NewtechContentbox .NewTechSlider {
+.NewtechContentbox .NewTechSlider,
+.OurServiceContentbox .NewTechSlider {
     width: 764px;
     height: 422px;
     margin: 0 auto;
 }
 
-.NewtechContentbox .NewTechSlider .sliderContent img {
+.NewtechContentbox .NewTechSlider .sliderContent img,
+.OurServiceContentbox .NewTechSlider .sliderContent img {
     width: 100%;
     height: 422px;
     border-radius: 12px;
 }
 
-.NewtechContentbox .slick-prev {
+.NewtechContentbox .slick-prev,
+.OurServiceContentbox .slick-prev {
     left: -40px;
 }
 
-.NewtechContentbox .slick-next {
+.NewtechContentbox .slick-next,
+.OurServiceContentbox .slick-next {
     right: -40px;
 }
 
-.NewtechContentbox .slick-prev:before {
+.NewtechContentbox .slick-prev:before,
+.OurServiceContentbox .slick-prev::before {
     content: "";
     position: absolute;
     background-image: url(./img/icone/SliderArrow.png);
@@ -373,7 +400,8 @@ label {
     right: 3px;
 }
 
-.NewtechContentbox .slick-next:before {
+.NewtechContentbox .slick-next:before,
+.OurServiceContentbox .slick-next::before {
     content: "";
     position: absolute;
     background-image: url(./img/icone/SliderArrow.png);
@@ -492,6 +520,14 @@ label {
     padding: 91px 0px 107px 150px;
 }
 
+.OurProjectContent .OurSoftwareInnerctn {
+    padding: 100px 0px 100px 92px;
+}
+
+.OurProjectContent .OurSoftwareInnerctn .slick-list {
+    height: 370px;
+}
+
 .OurProjectContent .OurProjectInnerctn .ourProjectInnerTitle h3 {
     font-style: normal;
     font-weight: 500;
@@ -502,6 +538,28 @@ label {
     height: 36px;
     line-height: 36px;
     margin-bottom: 16px !important;
+}
+
+.OurProjectContent .OurSoftwareInnerctn .ourProjectInnerTitle h3 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    height: 36px;
+    line-height: 36px;
+    color: #1ab999;
+    letter-spacing: 0.15em;
+    margin-bottom: 8px !important;
+}
+
+
+.OurProjectContent .OurSoftwareInnerctn .ourProjectInnerTitle p {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    height: 48px;
+    line-height: 48px;
+    color: #FFFFFF;
+    margin-bottom: 68px !important;
 }
 
 .OurProjectContent .OurProjectInnerctn .ourProjectInnerTitle p {
@@ -534,10 +592,14 @@ label {
     margin-bottom: 50px;
 }
 
-/* .OurProjectContent .OurProjectInnerctn .ProjectSliderBox .slick-slide {
-    max-width: 877px;
-    width: 100% !important;
-} */
+.OurProjectContent .OurSoftwareInnerctn .ProjectSliderBox .projectSliderImgbox img {
+    height: 100%;
+    border-radius: 12px;
+}
+
+.OurProjectContent .OurSoftwareInnerctn .ProjectSliderBox .projectSliderImgbox .ourProjectSupporter {
+    top: 198px;
+}
 
 .OurProjectContent .OurProjectInnerctn .ProjectSliderBox .projectSliderImgbox .ourProjectSupporter {
     position: absolute;
@@ -578,7 +640,17 @@ label {
     bottom: 0px;
 }
 
-.OurProjectContent .OurProjectInnerctn .ProjectSliderBox .projectSliderImgbox img {}
+.OurSoftwareInnerctn .ProjectSliderBox .projectSliderImgbox .projectOverlay .overlayBg {
+    position: absolute;
+    top: 0px;
+    background: #00004B;
+    opacity: 0;
+    border-radius: 12px;
+    height: 370px;
+    width: 764px;
+    transition: all 0.5s ease-in;
+    padding: 55px;
+}
 
 .ProjectSliderBox .projectSliderImgbox .projectOverlay .overlayBg {
     position: absolute;
@@ -837,15 +909,21 @@ label {
     margin: 0 auto;
 }
 
-.OverServiceMainTitle {
+.OverServiceMainTitle,
+.MainSoftWareTesting,
+.mainBlogCtn {
     padding-top: 24px;
 }
 
-.OverServiceMainTitle .mainLinkBox span {
+.OverServiceMainTitle .mainLinkBox span,
+.MainSoftWareTesting .mainLinkBox span,
+.mainBlogCtn .mainLinkBox span {
     margin: 0px 24px 0px 24px;
 }
 
-.OverServiceMainTitle .linkBox a {
+.OverServiceMainTitle .linkBox a,
+.MainSoftWareTesting .linkBox a,
+.mainBlogCtn .mainLinkBox a {
     max-width: fit-content;
     width: 100%;
     height: 27px;
@@ -857,8 +935,11 @@ label {
     color: #202020;
 }
 
-.OverServiceMainTitle .linkBox .active {
+.OverServiceMainTitle .linkBox .active,
+.MainSoftWareTesting .linkBox .active,
+.mainBlogCtn .linkBox .active {
     color: #1ab999;
+    font-weight: 600;
 }
 
 .OverServiceMainTitle .mainOverServiceContent {
@@ -899,7 +980,7 @@ label {
 
 .OverServiceMainTitle .mainOverServiceContent .overServiceImg {
     position: relative;
-    transition: all .5s ease-in;
+    transition: all .5s ease-in-out;
     backface-visibility: hidden;
 }
 
@@ -912,7 +993,7 @@ label {
 .OverServiceMainTitle .mainOverServiceContent .overServiceImg .OverserviceLayer {
     position: absolute;
     background: #00004B;
-    opacity: 0.7;
+    opacity: 0.3;
     width: 100%;
     height: 100%;
     border-radius: 12px;
@@ -930,6 +1011,7 @@ label {
 
 .OverServiceMainTitle .mainOverServiceContent .overServiceImg:hover .OverServiceHover {
     opacity: 1;
+    transition: all .5s ease-in-out;
 }
 
 .OverServiceMainTitle .mainOverServiceContent .overServiceImg .OverServiceHover {
@@ -991,4 +1073,958 @@ label {
     margin-top: 42px;
 }
 
+.OurServiceForm .mainFormContent {
+    max-width: 1133px;
+    width: 100%;
+    padding: 55px 381px 55px 78px;
+    background: #FFFFFF;
+    border-radius: 12px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    position: relative;
+}
+
+.OurServiceForm .mainFormContent .serviceFormtitle {
+    margin-bottom: 47px;
+}
+
+.OurServiceForm .mainFormContent .serviceFormtitle h3 {
+    color: #1ab999;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    height: 36px;
+    line-height: 36px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    margin-bottom: 8px !important;
+}
+
+
+.OurServiceForm .mainFormContent .serviceFormtitle p {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 52px;
+    height: 52px;
+    margin-bottom: 8px !important;
+}
+
+.MainSoftWareTesting .mainSoftwareContent .SoftwareDeteling {
+    padding-bottom: 113px;
+}
+
+.OurServiceForm .mainFormContent .serviceFormtitle span,
+.OurServiceForm .mainFormContent .OurServiceUserContent .mainUserContentDetails .userTitle p,
+.OurServiceForm .mainFormContent .OurServiceUserContent .mainUserContentDetails .userContact p,
+.MainSoftWareTesting .mainSoftwareContent .SoftwaretestingContent .SoftwareDetailsCtn p,
+.MainSoftWareTesting .mainSoftwareContent .SoftwareDeteling .SoftwareDetailingText p,
+.bolgContentbox .blogtextcontent h1 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    height: 24px;
+}
+
+.OurServiceForm .mainFormContent .OurServiceUserContent .mainUserContentDetails .userTitle p,
+.OurServiceForm .mainFormContent .OurServiceUserContent .mainUserContentDetails .userContact p {
+    color: #FFFFFF;
+}
+
+.OurServiceForm .mainFormContent .FloatingLabelbox .floating-label input,
+.contactBg .mainContactus .contactDetails .FloatingLabelbox .floating-label input {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #BDBDBD;
+    padding: 14px 0px 14px 33px;
+    border-radius: 5px;
+    border: 1px solid #00004B;
+}
+
+.OurServiceForm .mainFormContent .FloatingLabelbox .floating-label input:focus,
+.contactBg .mainContactus .contactDetails .FloatingLabelbox .floating-label input:focus {
+    box-shadow: none;
+    border: 1px solid #1ab999;
+    color: #1ab999;
+}
+
+.OurServiceForm .mainFormContent .FloatingLabelbox .floating-label label:focus {
+    color: #1ab999;
+}
+
+.OurServiceForm .mainFormContent .FloatingLabelbox .floating-label label,
+.contactBg .mainContactus .contactDetails .FloatingLabelbox .floating-label label {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    height: 21px;
+    margin-left: 31px;
+    padding: 0px 6px 0px 6px;
+    background-color: #FFFFFF;
+    color: #BDBDBD;
+}
+
+.OurServiceForm .mainFormContent .FloatingLabelbox .floating-label:focus-within label,
+.contactBg .mainContactus .contactDetails .FloatingLabelbox .floating-label:focus-within label {
+    transform: translate(0, -114%) scale(0.6);
+    color: #1ab999;
+
+}
+
+.OurServiceForm .mainFormContent .FloatingLabelbox .floating-label.floatingInput,
+.OurServiceForm .mainFormContent .FloatingLabelbox .serviceNumber {
+    margin-bottom: 24px;
+}
+
+.OurServiceForm .mainFormContent .FloatingLabelbox .serviceMsg {
+    margin-bottom: 30px;
+    height: auto;
+}
+
+.OurServiceForm .mainFormContent .FloatingLabelbox .serviceNumber .floating-label input {
+    width: 330px;
+}
+
+.OurServiceForm .mainFormContent .FloatingLabelbox .serviceMsg textarea::placeholder {
+    color: #BDBDBD;
+}
+
+.OurServiceForm .mainFormContent .FloatingLabelbox .serviceMsg textarea,
+.contactBg .mainContactus .contactDetails .FloatingLabelbox .serviceMsg textarea {
+    width: 100%;
+    border: 1px solid #00004B;
+    border-radius: 5px;
+    outline: none;
+    padding: 15px 33px;
+    color: #BDBDBD;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.OurServiceForm .mainFormContent .FloatingLabelbox button,
+.contactBg .mainContactus .contactDetails .FloatingLabelbox button {
+    width: 217px;
+    height: 64px;
+    border-radius: 5px;
+    border: none;
+    background-color: #1ab999;
+    color: #FFFFFF;
+}
+
+.contactBg .mainContactus .contactDetails .FloatingLabelbox button:hover {
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.OurServiceForm .mainFormContent .OurServiceUserContent {
+    position: absolute;
+    top: 67px;
+    left: 915px;
+}
+
+.OurServiceForm .mainFormContent .OurServiceUserContent img {
+    border-radius: 12px;
+}
+
+.OurServiceForm .mainFormContent .OurServiceUserContent .UserLayer {
+    position: absolute;
+    background: #00004B;
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+    border-radius: 12px;
+}
+
+.OurServiceForm .mainFormContent .OurServiceUserContent .mainUserContentDetails {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+
+}
+
+.OurServiceForm .mainFormContent .OurServiceUserContent .mainUserContentDetails .UserBack {
+    width: 164px;
+    height: 164px;
+    border-radius: 50%;
+    margin-top: 71px !important;
+    margin: 0 auto;
+    background-color: #1ab999;
+    text-align: center;
+}
+
+.OurServiceForm .mainFormContent .OurServiceUserContent .mainUserContentDetails .UserBack {
+    transform: scale(1);
+    transition: .3s ease-in-out;
+}
+
+.OurServiceForm .mainFormContent .OurServiceUserContent .mainUserContentDetails .UserBack:hover {
+    transform: scale(1.3);
+}
+
+.OurServiceForm .mainFormContent .OurServiceUserContent .mainUserContentDetails img {
+    width: 161px;
+    height: 161px;
+    border-radius: 50%;
+    position: relative;
+    top: 2px;
+}
+
+.OurServiceForm .mainFormContent .OurServiceUserContent .mainUserContentDetails .userTitle {
+    margin-top: 24px;
+}
+
+.OurServiceForm .mainFormContent .OurServiceUserContent .mainUserContentDetails .userTitle h3 {
+    color: #FFFFFF;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    height: 36px;
+    line-height: 36px;
+    margin-bottom: 2px !important;
+
+}
+
+.OurServiceForm .mainFormContent .OurServiceUserContent .mainUserContentDetails .userContact {
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 24px !important;
+    margin-bottom: 24px !important;
+}
+
+.OurServiceForm .mainFormContent .OurServiceUserContent .mainUserContentDetails .userContact .phone,
+.OurServiceForm .mainFormContent .OurServiceUserContent .mainUserContentDetails .userContact .email {
+    margin-right: 12px;
+}
+
+.OurServiceForm .mainFormContent .OurServiceUserContent .mainUserContentDetails .borderCustom {
+    max-width: 405px;
+    width: 100%;
+    height: 2px;
+    margin: 0 auto;
+    background-color: #1ab999;
+    margin-bottom: 24px !important;
+}
+
+.MainSoftWareTesting .mainSoftwareContent {
+    margin-top: 49px;
+}
+
+.MainSoftWareTesting .mainSoftwareContent .SoftwaretestingContent .softwareImgBox {
+    position: relative;
+    margin-bottom: 80px;
+}
+
+.MainSoftWareTesting .mainSoftwareContent .SoftwaretestingContent .softwareImgBox img {
+    width: 100%;
+    height: 322px;
+    border-radius: 12px;
+}
+
+.MainSoftWareTesting .mainSoftwareContent .SoftwaretestingContent .softwareImgBox .softwareLayer {
+    position: absolute;
+    background: linear-gradient(90deg, rgba(22, 22, 22, 0.8) 0%, rgba(43, 43, 43, 0) 100%);
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+}
+
+.MainSoftWareTesting .mainSoftwareContent .SoftwaretestingContent .SoftwareDetailsCtn {
+    margin-bottom: 80px;
+}
+
+.MainSoftWareTesting .mainSoftwareContent .SoftwaretestingContent .SoftwareDetailsCtn h3,
+.MainSoftWareTesting .mainSoftwareContent .SoftwareDeteling .SoftwareDetailingText h3 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    color: #202020;
+    line-height: 48px;
+    height: 48px;
+    margin-bottom: 16px !important;
+}
+
+.MainSoftWareTesting .mainSoftwareContent .SoftwaretestingContent .SoftwareDetailsCtn p {
+    height: 196px;
+    line-height: 28px;
+    font-weight: 500;
+}
+
+.MainSoftWareTesting .mainSoftwareContent .SoftwareDeteling .SoftwareDetailingText label {
+    padding-top: 30px;
+}
+
+.MainSoftWareTesting .mainSoftwareContent .SoftwareDeteling .SoftwareDetailingText p {
+    height: 308px;
+    line-height: 30px;
+    overflow: hidden;
+    font-weight: 500;
+}
+
+.MainSoftWareTesting .mainSoftwareContent .contactUsBox {
+    max-width: 380px;
+    width: 100%;
+    position: relative;
+}
+
+.MainSoftWareTesting .mainSoftwareContent .contactUsBox .contactUsInner {
+    width: 100%;
+    height: 219px;
+    background-color: #1ab999;
+    border-radius: 8px;
+    padding: 32px;
+}
+
+.MainSoftWareTesting .mainSoftwareContent .contactUsBox .contactUsInner h3 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    height: 22px;
+    line-height: 22px;
+    color: #FFFFFF;
+    margin-bottom: 16px !important;
+}
+
+.MainSoftWareTesting .mainSoftwareContent .contactUsBox .contactUsInner p {
+    max-width: 250px;
+    width: 100%;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    height: 44px;
+    line-height: 22px;
+    color: #FFFFFF;
+    overflow: hidden;
+
+}
+
+
+
+.MainSoftWareTesting .mainSoftwareContent .contactUsBox .contactUsInner button {
+    width: 177px;
+    height: 49px;
+    background-color: #FFFFFF;
+    margin-top: 24px;
+    border-radius: 8px;
+    transition: 0.25s;
+    border: none;
+    color: #1ab999;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.MainSoftWareTesting .mainSoftwareContent .contactUsBox .contactUsInner button:hover,
+.MainSoftWareTesting .mainSoftwareContent .contactUsBox .contactUsInner button:focus {
+    border: 2px solid #FFFFFF;
+    color: #1ab999;
+
+}
+
+.MainSoftWareTesting .mainSoftwareContent .contactUsBox .contactUsInner .Contact:hover,
+.MainSoftWareTesting .mainSoftwareContent .contactUsBox .contactUsInner .Contact:focus {
+    transform: translateY(-0.25em);
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.MainSoftWareTesting .mainSoftwareContent .contactUsBox .contactUsInner .Contact img {
+    margin-right: 17px;
+}
+
+.MainSoftWareTesting .mainSoftwareContent .contactUsBox .headset {
+    position: absolute;
+    right: 16px;
+    top: 19px;
+    width: 90px;
+    height: 90px;
+
+}
+
+.MainSoftWareTesting .mainSoftwareContent .contactUsBox .floatingBox {
+    width: 102px;
+    height: 102px;
+    border-radius: 50%;
+    background-color: #1ab999;
+    position: absolute;
+    right: 42px;
+    top: 168px;
+    transition: all .5s ease-in-out;
+    cursor: pointer;
+}
+
+.MainSoftWareTesting .mainSoftwareContent .contactUsBox .floatingBox img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: relative;
+    left: 1px;
+    top: 1px;
+}
+
+.MainSoftWareTesting .mainSoftwareContent .contactUsBox .floatingBox .FloatingHover {
+    width: 273px;
+    padding: 16px 24px 8px 24px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 16px rgba(157, 157, 157, 0.25);
+    border-radius: 25px 0px 25px 25px;
+    position: absolute;
+    top: 105px;
+    right: 50px;
+    display: none;
+}
+
+.MainSoftWareTesting .mainSoftwareContent .contactUsBox .floatingBox .FloatingHover .Linkedinblack,
+.MainSoftWareTesting .mainSoftwareContent .contactUsBox .floatingBox .FloatingHover .skypeblack,
+.MainSoftWareTesting .mainSoftwareContent .contactUsBox .floatingBox .FloatingHover .Telegram {
+    border-radius: 0px;
+    margin-right: 10px;
+}
+
+.MainSoftWareTesting .mainSoftwareContent .contactUsBox .floatingBox .FloatingHover .Telegram {
+    margin-right: 0px;
+}
+
+.MainSoftWareTesting .mainSoftwareContent .contactUsBox .floatingBox .FloatingHover .Linkedinblack,
+.MainSoftWareTesting .mainSoftwareContent .contactUsBox .floatingBox .FloatingHover .skypeblack {
+    width: 16px;
+    height: 22px;
+    object-fit: contain;
+}
+
+.MainSoftWareTesting .mainSoftwareContent .contactUsBox .floatingBox .FloatingHover .Telegram {
+    width: 18px;
+    height: 22px;
+    object-fit: contain;
+}
+
+.MainSoftWareTesting .mainSoftwareContent .contactUsBox .floatingBox .FloatingHover h3 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    height: 22px;
+    margin-bottom: 3px !important;
+}
+
+.MainSoftWareTesting .mainSoftwareContent .contactUsBox .floatingBox .FloatingHover .titleP {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    height: 22px;
+    line-height: 22px;
+    margin-bottom: 8px !important;
+    color: #1ab999;
+}
+
+.MainSoftWareTesting .mainSoftwareContent .contactUsBox .floatingBox .FloatingHover .floatingHoverInner {
+    border-bottom: 1px solid #1ab999;
+
+}
+
+.MainSoftWareTesting .mainSoftwareContent .contactUsBox .floatingBox .FloatingHover .hoverContactDetails {
+    margin-top: 8px;
+}
+
+.MainSoftWareTesting .mainSoftwareContent .contactUsBox .floatingBox .FloatingHover .hoverContactDetails .num {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    height: 21px;
+    color: #202020;
+    margin-left: 12px;
+
+}
+
+.MainSoftWareTesting .mainSoftwareContent .contactUsBox .floatingBox:hover .FloatingHover {
+    display: block;
+    transition: all .5s ease-in-out;
+
+}
+
+.SoftwareSliderContent {
+    background-image: url(./img/bg/SoftwareSlider.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 730px;
+    padding: 100px 0px 100px 92px;
+    position: relative;
+}
+
+.SoftwareSliderContent .Softwaresliderlayer {
+    background-color: #00004B;
+    opacity: 0.3;
+    position: absolute;
+    width: 100%;
+    top: 0px;
+    height: 100%;
+    left: 0px;
+}
+
+.SoftwareSliderContent .softwaresliderTitle {
+    position: relative;
+    margin-bottom: 68px;
+}
+
+.SoftwareSliderContent .softwaresliderTitle h3 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    height: 36px;
+    color: #1ab999;
+    margin-bottom: 8px !important;
+    letter-spacing: 0.15em;
+}
+
+.SoftwareSliderContent .softwaresliderTitle p {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    text-transform: capitalize;
+    height: 48px;
+    line-height: 48px;
+}
+
+.SoftwareSliderContent .SoftwareSliderInner .softwareSliderctnmain .slick-track,
+.SoftwareSliderContent .SoftwareSliderInner .softwareSliderctnmain .slick-track .slick-slide>div {
+    height: 370px;
+}
+
+
+.SoftwareSliderContent .SoftwareSliderInner .softwareSliderctnmain .slick-track .slick-slide {
+    min-width: 764px;
+    width: 764px !important;
+    margin-right: 143px;
+}
+
+.SoftwareSliderContent .SoftwareSliderInner .softwareSliderctnmain .software-img {
+    position: relative;
+    display: block;
+    backface-visibility: hidden;
+    transition: .5s ease-in-out;
+}
+
+.SoftwareSliderContent .SoftwareSliderInner .softwareSliderctnmain .software-img .bgleyer {
+    position: absolute;
+    width: 100%;
+    height: 172px;
+    bottom: 0;
+    border-radius: 0px 0px 12px 12px;
+    background: linear-gradient(180deg, #000032 0%, #00004B 100%);
+    opacity: 0.7;
+}
+
+.SoftwareSliderContent .SoftwareSliderInner .softwareSliderctnmain .software-img .bgleyer h1 {
+    color: #1ab999;
+}
+
+.SoftwareSliderContent .SoftwareSliderInner .softwareSliderctnmain .software-img .bgleyer p {
+    color: #FFFFFF;
+
+}
+
+.SoftwareSliderContent .SoftwareSliderInner .softwareSliderctnmain .software-img img {
+    width: 100%;
+    border-radius: 12px;
+
+}
+
+.SoftwareSliderContent .SoftwareSliderInner .softwareSliderctnmain .software-img:hover .hoverHidden {
+    opacity: 0;
+}
+
+.SoftwareSliderContent .SoftwareSliderInner .softwareSliderctnmain .software-img:hover .softwareHoverMain {
+    opacity: 0.7;
+}
+
+.SoftwareSliderContent .SoftwareSliderInner .softwareSliderctnmain .software-img .softwareSliderTitle {
+    position: absolute;
+    bottom: 48px;
+    width: 100%;
+    padding-left: 55px;
+    padding-right: 55px;
+    height: 76px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.SoftwareSliderContent .SoftwareSliderInner .softwareSliderctnmain .software-img .softwareSliderTitle h1,
+.SoftwareSliderContent .SoftwareSliderInner .softwareSliderctnmain .software-img .softwareHoverMain .MiniHoverCtnbg h1,
+.contactBg .mainContactus .contactDetails h1,
+.contactBg .mainContactus .OfficeLocationMain .locationtitle h1 {
+    color: #1ab999;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    height: 36px;
+    margin-bottom: 4px !important;
+}
+
+.SoftwareSliderContent .SoftwareSliderInner .softwareSliderctnmain .software-img .softwareSliderTitle p,
+.SoftwareSliderContent .SoftwareSliderInner .softwareSliderctnmain .software-img .softwareHoverMain .MiniHoverCtnbg h2 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    height: 36px;
+    color: #FFFFFF;
+}
+
+.SoftwareSliderContent .SoftwareSliderInner .softwareSliderctnmain .software-img .softwareHoverMain .MiniHoverCtnbg p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    height: 120px;
+    color: #FFFFFF;
+    margin-bottom: 20px !important;
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+}
+
+.SoftwareSliderContent .SoftwareSliderInner .softwareSliderctnmain .software-img .softwareHoverMain .MiniHoverCtnbg h2 {
+    margin-bottom: 20px !important;
+}
+
+.SoftwareSliderContent .SoftwareSliderInner .softwareSliderctnmain .software-img .softwareHoverMain .MiniHoverCtnbg a {
+    text-decoration: none;
+    color: #1ab999;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    height: 24px;
+}
+
+
+
+.SoftwareSliderContent .SoftwareSliderInner .softwareSliderctnmain .software-img .softwareHoverMain {
+    position: absolute;
+    top: 0;
+    background: linear-gradient(180deg, #000032 0%, #00004B 100%);
+    opacity: 0;
+    width: 100%;
+    border-radius: 12px;
+    padding: 55px;
+
+}
+
+
 /*  OurSevice Banner CSS End  */
+
+/*  Contact CSS start */
+
+.contactBg {
+    background-image: url(./img/bg/contact.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    padding-top: 229px;
+    padding-bottom: 176px;
+}
+
+.contactBg .mainContactus .contactDetails {
+    max-width: 692px;
+    width: 100%;
+    padding: 68px 80px 65px 79px;
+    background-color: #FFFFFF;
+    border-radius: 12px 0px 0px 12px;
+}
+
+.contactBg .mainContactus .contactDetails h1,
+.contactBg .mainContactus .contactDetails h2,
+.contactBg .mainContactus .OfficeLocationMain .locationtitle h1 {
+    margin-bottom: 8px !important;
+}
+
+.contactBg .mainContactus .contactDetails h2,
+.contactBg .mainContactus .OfficeLocationMain .locationtitle h2 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 52px;
+    height: 52px;
+    color: #202020;
+
+}
+
+.contactBg .mainContactus .OfficeLocationMain .locationtitle h2 {
+    color: #FFFFFF;
+    margin-bottom: 25px !important;
+}
+
+.contactBg .mainContactus .contactDetails p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    height: 24px;
+    color: #202020;
+    margin-bottom: 47px !important;
+}
+
+.contactBg .mainContactus .contactDetails .FloatingLabelbox .floating-label {
+    margin-bottom: 24px;
+    max-width: 450px;
+    width: 100%;
+}
+
+.contactBg .mainContactus .OfficeLocationMain {
+    background-image: url(./img/bg/contactlayer.png);
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0px 12px 12px 0px;
+    padding: 68px 126px 110px 115px;
+}
+
+.contactBg .mainContactus .OfficeLocationMain .address h1 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 27px;
+    color: #FFFFFF;
+    margin-bottom: 16px !important;
+}
+
+.contactBg .mainContactus .OfficeLocationMain .address img {
+    margin-right: 17.12px;
+}
+
+.contactBg .mainContactus .OfficeLocationMain .address p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+.contactBg .mainContactus .OfficeLocationMain .address .map,
+.contactBg .mainContactus .OfficeLocationMain .address .phone {
+    margin-bottom: 12px;
+}
+
+.contactBg .mainContactus .contactDetails .FloatingLabelbox .serviceMsg {
+    height: 99px;
+    margin-bottom: 36px;
+}
+
+.contactBg .mainContactus .contactDetails .FloatingLabelbox .serviceMsg textarea {
+    border: 1px solid #00004B;
+    border-radius: 5px;
+    outline: none;
+    padding: 15px 33px;
+}
+
+/*  Contact CSS end  */
+
+/*  Blog CSS Start  */
+
+.bolgContentbox {
+    margin-top: 75px;
+    margin-bottom: 75px;
+}
+
+.bolgContentbox .blogtextcontent h1 {
+    margin-bottom: 8px !important;
+    color: #1ab999;
+}
+
+.bolgContentbox .blogtextcontent h2 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 52px;
+    height: 104px;
+    max-width: 751px;
+    width: 100%;
+    margin-bottom: 8px !important;
+}
+
+.bolgContentbox .blogtextcontent p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    height: 168px;
+    max-width: 728px;
+    width: 100%;
+    margin-bottom: 16px !important;
+}
+
+.bolgContentbox .blogtextcontent a {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    height: 27px;
+    text-decoration: none;
+    color: #1ab999;
+    margin-bottom: 24px;
+}
+
+.bolgContentbox .blogtextcontent .haseTagectn {
+    margin-top: 24px;
+}
+
+.bolgContentbox .blogtextcontent .haseTagectn .hasedetails {
+    background-color: #1ab999;
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+.bolgContentbox .blogtextcontent .haseTagectn .hasedetails span,
+.MainBlogCardSection .mainCarddetails .cardDetails span {
+    color: #FFFFFF;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    height: 24px;
+}
+
+.MainBlogCardSection .mainCarddetails .cardDetails span {
+    color: #1ab999;
+    font-weight: 400;
+}
+
+.MainBlogCardSection .mainCarddetails .cardDetails h1 {
+    height: 72px;
+    line-height: 36px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    text-transform: capitalize;
+    color: #202020;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    margin: 16px 0px 16px 0px !important;
+}
+
+.MainBlogCardSection .mainCarddetails .cardDetails p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    height: 96px;
+    color: #202020;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+}
+
+.MainBlogCardSection .mainCarddetails .cardDetails .cardHase {
+    display: flex;
+    align-items: center;
+    margin-top: 16px;
+}
+
+.MainBlogCardSection .mainCarddetails .cardDetails .cardHase .cardLearning,
+.MainBlogCardSection .mainCarddetails .cardDetails .cardHase .cardblockchain {
+    margin-right: 12px;
+    padding: 4px 8px;
+    background-color: #1ab999;
+    border-radius: 4px;
+}
+
+.MainBlogCardSection .mainCarddetails .cardDetails .cardHase .cardLearning p,
+.MainBlogCardSection .mainCarddetails .cardDetails .cardHase .cardblockchain p {
+    height: auto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+.MainBlogCardSection .mainCarddetails .cardDetails u {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.blogPagination {
+    margin-bottom: 75px;
+}
+
+.blogPagination .pagination {
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0px;
+}
+
+.blogPagination .pagination li {
+    background: #F8F8F8;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+
+.blogPagination .pagination li a {
+    color: #202020;
+    text-decoration: none;
+}
+
+.blogPagination .pagination li.active {
+    width: 34px;
+    height: 40px;
+    background: #1ab999;
+    border-radius: 8px;
+    box-shadow: 0px 0px 5px 1px #1ab999;
+}
+
+.blogPagination .pagination li .activepage {
+    color: #FFFFFF;
+}
+
+.blogPagination .pagination li:first-child,
+.blogPagination .pagination li:last-child {
+    display: none;
+}
+
+.blogPagination .pagination li:nth-child(2) {
+    border-radius: 50% !important;
+    margin-right: 16px;
+}
+
+.blogPagination .pagination li:nth-child(3) {
+    border-radius: 50px 0px 0px 50px;
+}
+
+.blogPagination .pagination li:nth-child(5) {
+    border-radius: 0px 50px 50px 0px;
+}
+
+.blogPagination .pagination li:nth-last-child(2) {
+    margin-left: 16px;
+    border-radius: 50% !important;
+}
+
+.blogPagination .pagination .secArrow {
+    transform: rotate(180deg);
+}
+
+.blogPagination .pagination .page-item-custom .test {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

@@ -7,28 +7,20 @@ import AuthStorage from "../helper/AuthStorage";
 import Layout from "../layouts/Layout";
 import { changeLoginState } from "../redux/actions/loginAction";
 import Homepage from "./homepage/Homepage";
-import OurService from "./oursrvice/OurService";
+import OurService from "./ourservice/OurService";
+import SoftWareTesting from "./softwareTesting/SoftWareTesting";
+import ContactUs from "./cotactus/ContactUs";
+import Blog from "./Blog/Blog";
 
 const Index = () => {
-  const pathname = ["ourservice",]
-  const history = useHistory();
-  const location = useLocation();
-  const dispatch = useDispatch();
+
 
 
   return (
     <>
 
       <Switch>
-        {/* <Route
-          exact
-          path={[
-            "/",
-            "/homepage",
-            "/ourservice"
-          ]}
-        > */}
-        {/* <Layout> */}
+
         <RouteWrapper
           exact={true}
           path="/"
@@ -41,6 +33,29 @@ const Index = () => {
           exact={true}
           path="/ourservice"
           component={OurService}
+          layout={Layout}
+          isPrivateRoute={true}
+        />
+
+        <RouteWrapper
+          exact={true}
+          path="/softwaretesting"
+          component={SoftWareTesting}
+          layout={Layout}
+          isPrivateRoute={true}
+        />
+
+        <RouteWrapper
+          exact={true}
+          path="/contactus"
+          component={ContactUs}
+          layout={Layout}
+          isPrivateRoute={true}
+        />
+        <RouteWrapper
+          exact={true}
+          path="/blog"
+          component={Blog}
           layout={Layout}
           isPrivateRoute={true}
         />
