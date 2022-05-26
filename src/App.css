@@ -23,7 +23,7 @@ label {
     margin-bottom: 0px !important;
 }
 
-/*  <========  HomePage CSS Start  ========>  */
+/* ========  Container CSS Start  ======== */
 
 .CustomContainer {
     max-width: 1920px;
@@ -32,7 +32,7 @@ label {
 }
 
 .container {
-    max-width: 1600px !important;
+    max-width: 1680px !important;
     width: 100%;
     margin: 0 auto;
 }
@@ -42,6 +42,15 @@ label {
     width: 100%;
 
 }
+
+
+
+/* ========  Container CSS End  ======== */
+
+
+/*  <========  HomePage CSS Start  ========>  */
+
+
 
 .Sliderbg {
     background-repeat: no-repeat;
@@ -873,14 +882,15 @@ label {
 
 
 .mainOurServiceBenner .OurServiceBanner .mainBenner .BannerTitle h3 {
-    height: 93px;
+    height: auto;
     line-height: 93px;
     font-style: normal;
     font-weight: 700;
     font-size: 62px;
     color: #FFFFFF;
-    max-width: fit-content;
-    width: 100%;
+    max-width: 1095px;
+    min-width: 327px;
+    width: fit-content;
     margin: 0 auto;
     position: relative;
     margin-bottom: 24px !important;
@@ -898,8 +908,7 @@ label {
 
 
 .mainOurServiceBenner .OurServiceBanner .mainBenner .BannerTitle p {
-    max-width: 565px;
-    width: 100%;
+    max-width: 959px;
     height: 60px;
     line-height: 30px;
     font-style: normal;
@@ -911,19 +920,22 @@ label {
 
 .OverServiceMainTitle,
 .MainSoftWareTesting,
-.mainBlogCtn {
+.mainBlogCtn,
+.excepteurinstmainctn {
     padding-top: 24px;
 }
 
 .OverServiceMainTitle .mainLinkBox span,
 .MainSoftWareTesting .mainLinkBox span,
-.mainBlogCtn .mainLinkBox span {
+.mainBlogCtn .mainLinkBox span,
+.excepteurinstmainctn .mainLinkBox span {
     margin: 0px 24px 0px 24px;
 }
 
 .OverServiceMainTitle .linkBox a,
 .MainSoftWareTesting .linkBox a,
-.mainBlogCtn .mainLinkBox a {
+.mainBlogCtn .mainLinkBox a,
+.excepteurinstmainctn .mainLinkBox a {
     max-width: fit-content;
     width: 100%;
     height: 27px;
@@ -937,7 +949,8 @@ label {
 
 .OverServiceMainTitle .linkBox .active,
 .MainSoftWareTesting .linkBox .active,
-.mainBlogCtn .linkBox .active {
+.mainBlogCtn .linkBox .active,
+.excepteurinstmainctn .linkBox .active {
     color: #1ab999;
     font-weight: 600;
 }
@@ -1656,7 +1669,8 @@ label {
 .SoftwareSliderContent .SoftwareSliderInner .softwareSliderctnmain .software-img .softwareSliderTitle h1,
 .SoftwareSliderContent .SoftwareSliderInner .softwareSliderctnmain .software-img .softwareHoverMain .MiniHoverCtnbg h1,
 .contactBg .mainContactus .contactDetails h1,
-.contactBg .mainContactus .OfficeLocationMain .locationtitle h1 {
+.contactBg .mainContactus .OfficeLocationMain .locationtitle h1,
+.excepteurinstmainctn .taglinebox .teglineText h1 {
     color: #1ab999;
     font-style: normal;
     font-weight: 500;
@@ -1743,7 +1757,9 @@ label {
 
 .contactBg .mainContactus .contactDetails h1,
 .contactBg .mainContactus .contactDetails h2,
-.contactBg .mainContactus .OfficeLocationMain .locationtitle h1 {
+.contactBg .mainContactus .OfficeLocationMain .locationtitle h1,
+.excepteurinstmainctn .taglinebox .teglineText h1,
+.excepteurinstmainctn .ourSpecialitiesbox h1 {
     margin-bottom: 8px !important;
 }
 
@@ -2028,3 +2044,543 @@ label {
     align-items: center;
     justify-content: center;
 }
+
+.excepteurinstmainctn .excepteurinstDtailsSection {
+    margin-top: 79px;
+}
+
+.excepteurinstmainctn .excepteurinstDtailsSection .excepteurinstContent .xsContainer {
+    max-width: 1036px;
+    width: 100%;
+}
+
+.excepteurinstmainctn .excepteurinstDtailsSection .excepteurinstContent .extraSmallContainer {
+    max-width: 544px;
+    width: 100%;
+}
+
+.excepteurinstmainctn .excepteurinstDtailsSection .excepteurinstContent .mainSocialbox .socialdate h1,
+.excepteurinstmainctn .excepteurinstDtailsSection .excepteurinstContent .mainSocialbox .postingLinkmain .postingLink h1 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #1ab999;
+    height: 24px;
+}
+
+.excepteurinstmainctn .excepteurinstDtailsSection .excepteurinstContent .mainSocialbox {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #1ab999;
+}
+
+.excepteurinstmainctn .excepteurinstDtailsSection .excepteurinstContent .mainSocialbox .postingLinkmain .PostingSocialmedia {
+    margin-left: 24px;
+}
+
+.excepteurinstmainctn .excepteurinstDtailsSection .excepteurinstContent .mainSocialbox .postingLinkmain .PostingSocialmedia img:last-child {
+    margin-right: 0px;
+}
+
+.excepteurinstmainctn .excepteurinstDtailsSection .excepteurinstContent .mainSocialbox .postingLinkmain .PostingSocialmedia img {
+    margin-right: 16px;
+}
+
+.excepteurinstmainctn .excepteurinstDtailsSection .excepteurinstContent .excepteurinsthasebox {
+    display: flex;
+    align-items: center;
+    margin-top: 24px;
+}
+
+.excepteurinstmainctn .excepteurinstDtailsSection .excepteurinstContent .excepteurinsthasebox .hasectn {
+    min-width: 89px;
+    max-width: 192px;
+    height: 32px;
+    padding: 4px 8px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    background-color: #1ab999;
+    border-radius: 4px;
+    margin-right: 12px;
+}
+
+.excepteurinstmainctn .excepteurinstDtailsSection .excepteurinstContent .excepteurinsthasebox .hasectn p {
+    color: #FFFFFF;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    height: 24px;
+}
+
+.excepteurinstmainctn .excepteurinstDtailsSection .excepteurinstContent .excepteurinsthasebox .hasectn:last-child {
+    margin-right: 0px;
+}
+
+.excepteurinstmainctn .excepteurinstDtailsSection .excepteurDetailstitle {
+    position: relative;
+    width: 100%;
+    padding: 24px 192px 24px 39px;
+    margin-top: 32px;
+    border-radius: 8px;
+    background: #F9F9F9;
+    margin-bottom: 32px;
+}
+
+.excepteurinstmainctn .excepteurinstDtailsSection .excepteurDetailstitle::before {
+    position: absolute;
+    content: '';
+    width: 7px;
+    height: 100%;
+    background-color: #1ab999;
+    top: 0px;
+    left: 0px;
+    border-radius: 8px 0px 0px 8px;
+}
+
+.excepteurinstmainctn .excepteurinstDtailsSection .excepteurDetailstitle p {
+    max-width: 805px;
+    width: 100%;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    height: 24px;
+    color: #202020;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.excepteurinstmainctn .excepteurinstDtailsSection .excepteurtextBox,
+.excepteurinstmainctn .excepteurinstDtailsSection .collExcepteurbox,
+.excepteurinstmainctn .excepteurinstDtailsSection .excepteurimgbox img {
+    margin-bottom: 56px;
+}
+
+.excepteurinstmainctn .excepteurinstDtailsSection .excepteurdotlink {
+    margin-bottom: 24px;
+}
+
+.excepteurinstmainctn .excepteurinstDtailsSection .excepteurtextBox h1,
+.excepteurinstmainctn .excepteurinstDtailsSection .excepteurdotlink h1,
+.excepteurinstmainctn .excepteurinstDtailsSection .excepteurimgbox h1 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 48px;
+    height: 48px;
+    text-transform: capitalize;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin-bottom: 12px !important;
+}
+
+.excepteurinstmainctn .excepteurinstDtailsSection .excepteurtextBox p,
+.excepteurinstmainctn .excepteurinstDtailsSection .excepteurimgbox p,
+.excepteurinstmainctn .taglinebox .teglineText p {
+    height: 120px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.excepteurinstmainctn .excepteurinstDtailsSection .excepteurdotlink ul {
+    max-width: 1011px;
+    width: 100%;
+    margin-left: auto;
+    height: 160px;
+}
+
+.excepteurinstmainctn .excepteurinstDtailsSection .excepteurdotlink ul li {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+}
+
+.excepteurinstmainctn .excepteurinstDtailsSection .collExcepteurbox #accordion .card {
+    border: none;
+
+    border-radius: 0px;
+}
+
+.excepteurinstmainctn .excepteurinstDtailsSection .collExcepteurbox #accordion .card .card-header {
+    background-color: transparent;
+    padding: 32px 0px 16px 0px;
+    border-bottom: 1px solid #202020;
+}
+
+.excepteurinstmainctn .excepteurinstDtailsSection .collExcepteurbox #accordion .card .card-header h5 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    height: 27px;
+}
+
+.excepteurinstmainctn .excepteurinstDtailsSection .collExcepteurbox #accordion .card .card-header .btn:focus {
+    box-shadow: none;
+}
+
+.excepteurinstmainctn .excepteurinstDtailsSection .collExcepteurbox #accordion .card-body {
+    padding: 24px 20px 0px 20px;
+}
+
+.excepteurinstmainctn .taglinebox {
+    margin-top: 100px;
+    padding: 132px 120px 90px 120px;
+    background-color: #F9F9F9;
+}
+
+.excepteurinstmainctn .taglinebox .teglineText h2 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 52px;
+    height: 104px;
+    color: #202020;
+    margin-bottom: 24px !important;
+    max-width: 730px;
+    width: 100%;
+}
+
+.excepteurinstmainctn .taglinebox .teglineText p {
+    max-width: 730px;
+    width: 100%;
+
+}
+
+.excepteurinstmainctn .taglinebox .teglineMainImg {
+    position: relative;
+}
+
+.excepteurinstmainctn .taglinebox .teglineMainImg::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 422px;
+    border-radius: 12px;
+    top: -42px;
+    left: 42px;
+    background: linear-gradient(0deg, rgba(229, 52, 103, 0.7) 0%, rgba(2, 0, 80, 0.7) 100%);
+}
+
+.excepteurinstmainctn .ourSpecialitiesbox {
+    padding: 100px 0px 100px 0px;
+}
+
+.excepteurinstmainctn .ourSpecialitiesbox h1 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    height: 36px;
+    letter-spacing: 0.15em;
+    color: #1ab999;
+}
+
+.excepteurinstmainctn .ourSpecialitiesbox h2 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 48px;
+    height: 48px;
+    text-transform: capitalize;
+    color: #202020;
+    margin-bottom: 65px !important;
+}
+
+.excepteurinstmainctn .ourSpecialitiesbox .mainCardbox {
+    width: 100%;
+}
+
+.excepteurinstmainctn .ourSpecialitiesbox .mainCardbox .specialitiescard {
+    max-width: 358px;
+    width: 100%;
+    text-align: center;
+    margin-right: 71px;
+}
+
+.excepteurinstmainctn .ourSpecialitiesbox .mainCardbox .specialitiescard img {
+    margin-bottom: 42px;
+    width: 100px;
+    height: 100px;
+}
+
+
+.excepteurinstmainctn .ourSpecialitiesbox .mainCardbox .specialitiescard h2 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    height: 36px;
+    color: #202020;
+    margin-bottom: 16px !important;
+    white-space: nowrap;
+}
+
+.excepteurinstmainctn .ourSpecialitiesbox .mainCardbox .specialitiescard p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    height: 96px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+}
+
+.excepteurinstmainctn .ceoContent .bgimg {
+    background-image: url(./img/bg/Subtract.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 385px;
+    position: relative;
+    padding-top: 190px;
+}
+
+.excepteurinstmainctn .ceoContent .bgimg::after {
+    position: absolute;
+    content: "";
+    background-image: url(./img/bg/subtractlayer.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 385px;
+    top: 0;
+}
+
+.excepteurinstmainctn .ceoContent .bgimg .ceoCard {
+    max-width: 1102px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 72px 139px;
+    position: relative;
+    z-index: 10;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 16px rgba(157, 157, 157, 0.25);
+    border-radius: 12px;
+
+}
+
+.excepteurinstmainctn .ceoContent .bgimg .ceoCard .hex {
+    position: absolute;
+    top: -22px;
+    left: 45px;
+    width: 84px;
+    height: 68px;
+}
+
+.excepteurinstmainctn .ceoContent .bgimg .ceoCard p {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 52px;
+    height: 104px;
+    text-align: center;
+    overflow: hidden;
+    margin-bottom: 32px !important;
+}
+
+.excepteurinstmainctn .ceoContent .bgimg .ceoCard p span {
+    color: #1ab999;
+}
+
+.excepteurinstmainctn .ceoContent .bgimg .ceoCard h5 {
+    max-width: 287px;
+    width: 100%;
+    margin: 0 auto;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    height: 27px;
+    text-align: end;
+    position: relative;
+}
+
+.excepteurinstmainctn .ceoContent .bgimg .ceoCard h5::before {
+    position: absolute;
+    content: '';
+    width: 30px;
+    height: 4px;
+    background-color: #1ab999;
+    left: 0px;
+    top: 12px;
+}
+
+.excepteurinstmainctn .ceoContent .contectbox {
+    padding-top: 211px;
+    padding-bottom: 100px;
+}
+
+/*  Family Benner CSS start  */
+
+.ourFamilyMainbox .ourfamilydetalisbox {
+    background-image: url(./img/bg/familyback.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding-top: 100px;
+}
+
+.ourFamilyMainbox .ourfamilydetalisbox::after {
+    position: absolute;
+    content: '';
+    background-image: url(./img/bg/familybacklayer.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+}
+
+.ourFamilyMainbox .ourfamilydetalisbox .familycardbox {
+    position: relative;
+    z-index: 55;
+}
+
+.ourFamilyMainbox .ourfamilydetalisbox .familycardbox .mainfamilycard {
+    background-color: #FFFFFF;
+    border-radius: 12px;
+}
+
+.ourFamilyMainbox .ourfamilydetalisbox .familycardbox .familyDetailsBox {
+    padding: 28px 32px;
+}
+
+.ourFamilyMainbox .ourfamilydetalisbox .familycardbox .familyDetailsBox .familyfollowlink .linkdin,
+.ourFamilyMainbox .ourfamilydetalisbox .familycardbox .familyDetailsBox .familyfollowlink .telegram,
+.ourFamilyMainbox .ourfamilydetalisbox .familycardbox .familyDetailsBox .familyfollowlink .skype {
+    width: 21px;
+    height: 21px;
+    margin-right: 12px;
+}
+
+.ourFamilyMainbox .ourfamilydetalisbox .familycardbox .familyDetailsBox .familyfollowlink .skype {
+    margin-right: 0px;
+}
+
+.ourFamilyMainbox .ourfamilydetalisbox .familycardbox .familyDetailsBox .familycardtitle {
+    margin-top: 11px;
+}
+
+.ourFamilyMainbox .ourfamilydetalisbox .familycardbox .familyDetailsBox .familycardtitle h1 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    height: 36px;
+    text-transform: capitalize;
+}
+
+.ourFamilyMainbox .ourfamilydetalisbox .familycardbox .familyDetailsBox .familyownertitle {
+    margin-top: 8px;
+}
+
+.ourFamilyMainbox .ourfamilydetalisbox .familycardbox .familyDetailsBox .familyownertitle p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    height: 24px;
+    color: #1ab999;
+}
+
+
+.ourFamilyMainbox .ourfamilydetalisbox .partofFamilymain {
+    background-image: url(./img/bg/FamilySubtract.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 508px;
+    position: relative;
+    z-index: 58;
+}
+
+.ourFamilyMainbox .ourfamilydetalisbox .partofFamilymain::after {
+    background-image: url(./img/bg/familylayerSubtract.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    content: '';
+    top: 0px;
+    left: 0px;
+}
+
+.ourFamilyMainbox .ourfamilydetalisbox .partofFamilymain .familycontainer {
+    position: relative;
+    z-index: 60;
+    padding-top: 246px;
+}
+
+.ourFamilyMainbox .ourfamilydetalisbox .partofFamilymain .familycontainer .partfamilytitle {
+    max-width: 865px;
+    width: 100%;
+    height: 146px;
+    overflow: hidden;
+    position: relative;
+    z-index: 5;
+}
+
+.ourFamilyMainbox .ourfamilydetalisbox .partofFamilymain .familycontainer .partfamilytitle h1 {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 48.8571px;
+    line-height: 73px;
+    color: #FFFFFF;
+}
+
+.ourFamilyMainbox .ourfamilydetalisbox .partofFamilymain .familycontainer .partfamilytitle h1 span {
+    color: #1ab999;
+}
+
+.ourFamilyMainbox .ourfamilydetalisbox .partofFamilymain .familycontainer .familyjoining button {
+    width: 209px;
+    height: 64px;
+    background: #1ab999;
+    border: none;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    border-radius: 5px;
+    position: relative;
+    z-index: 5;
+}
+
+.ourFamilyMainbox .ourfamilydetalisbox .partofFamilymain .familycontainer::before {
+    background-image: url(./img/icone/familyvactor.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 787px;
+    height: 259px;
+    position: absolute;
+    content: '';
+    top: 176px;
+    right: 296px;
+}
+
+/*  Family Benner CSS end  */

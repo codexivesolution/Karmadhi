@@ -11,6 +11,9 @@ import OurService from "./ourservice/OurService";
 import SoftWareTesting from "./softwareTesting/SoftWareTesting";
 import ContactUs from "./cotactus/ContactUs";
 import Blog from "./Blog/Blog";
+import ExcepteurInst from "./Blog/ExcepteurInst";
+import OurFamily from "./ourfamily/OurFamily";
+
 
 const Index = () => {
 
@@ -52,6 +55,8 @@ const Index = () => {
           layout={Layout}
           isPrivateRoute={true}
         />
+
+
         <RouteWrapper
           exact={true}
           path="/blog"
@@ -59,6 +64,24 @@ const Index = () => {
           layout={Layout}
           isPrivateRoute={true}
         />
+
+        <RouteWrapper
+          exact={true}
+          path="/excepteurinst"
+          component={ExcepteurInst}
+          layout={Layout}
+          isPrivateRoute={true}
+        />
+
+        <RouteWrapper
+          exact={true}
+          path="/ourfamily"
+          component={OurFamily}
+          layout={Layout}
+          isPrivateRoute={true}
+        />
+
+
 
 
         {/* </Layout> */}
