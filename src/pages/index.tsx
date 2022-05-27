@@ -13,6 +13,8 @@ import ContactUs from "./cotactus/ContactUs";
 import Blog from "./Blog/Blog";
 import ExcepteurInst from "./Blog/ExcepteurInst";
 import OurFamily from "./ourfamily/OurFamily";
+import Job from "./Job/Job";
+import SeniorJavaDev from "./Job/SeniorJavaDev";
 
 
 const Index = () => {
@@ -77,6 +79,22 @@ const Index = () => {
           exact={true}
           path="/ourfamily"
           component={OurFamily}
+          layout={Layout}
+          isPrivateRoute={true}
+        />
+
+        <RouteWrapper
+          exact={true}
+          path="/job"
+          component={Job}
+          layout={Layout}
+          isPrivateRoute={true}
+        />
+
+        <RouteWrapper
+          exact={true}
+          path="/seniorjavadev"
+          component={SeniorJavaDev}
           layout={Layout}
           isPrivateRoute={true}
         />
