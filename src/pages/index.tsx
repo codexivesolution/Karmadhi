@@ -15,6 +15,8 @@ import ExcepteurInst from "./Blog/ExcepteurInst";
 import OurFamily from "./ourfamily/OurFamily";
 import Job from "./Job/Job";
 import SeniorJavaDev from "./Job/SeniorJavaDev";
+import OurProject from "./ourproject/OurProject";
+import SingleProject from "./ourproject/SingleProject";
 
 
 const Index = () => {
@@ -99,7 +101,21 @@ const Index = () => {
           isPrivateRoute={true}
         />
 
+        <RouteWrapper
+          exact={true}
+          path="/ourproject"
+          component={OurProject}
+          layout={Layout}
+          isPrivateRoute={true}
+        />
 
+        <RouteWrapper
+          exact={true}
+          path="/singleproject"
+          component={SingleProject}
+          layout={Layout}
+          isPrivateRoute={true}
+        />s
 
 
         {/* </Layout> */}
