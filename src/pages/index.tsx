@@ -14,9 +14,9 @@ import { EmployesData } from "./employes/EmployesData";
 import { ContectUs } from "./contectUs/ContectUs";
 import { Position } from "./position/Position";
 import { Service } from "./service/Service";
-import { Blog } from "./blog/Blog";
 import { Login } from "./login/Login";
 import { Jobs } from "./jobs/Jobs";
+import Blog from "./blog/Blog";
 const Index = () => {
 
   const pathname = ["",]
