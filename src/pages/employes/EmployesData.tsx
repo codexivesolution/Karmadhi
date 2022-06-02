@@ -340,11 +340,35 @@ export const EmployesData = () => {
 
 		let formData: any = new FormData();
 
-		for (var key in addData) {
-			formData.append(key, JSON.stringify(addData[key]))
+		formData.append('name', addData.name);
+		formData.append('gender', addData.gender);
 
-			// formData.append(key, Array.isArray(addData[key]) || typeof addData[key] === "object" ? JSON.stringify(addData[key]) : addData[key])
+		formData.append('position', addData.position);
+		formData.append('aboutMe', addData.aboutMe);
+		formData.append('emailId', addData.emailId);
+
+
+
+		for (var i = 0; i < addData.certifications.length; i++) {
+			for (const [key, value] of Object.entries(addData.certifications[i])) {
+				formData.append(`certifications[${i}][${key}]`, value);
+			}
 		}
+
+		for (var i = 0; i < addData.technologies.length; i++) {
+			for (const [key, value] of Object.entries(addData.technologies[i])) {
+				formData.append(`technologies[${i}][${key}]`, value);
+			}
+		}
+
+
+		formData.append('socialLinks', JSON.stringify(addData.socialLinks));
+
+		// for (var key in addData) {
+		// 	formData.append(key, JSON.stringify(addData[key]))
+
+		// 	// formData.append(key, Array.isArray(addData[key]) || typeof addData[key] === "object" ? JSON.stringify(addData[key]) : addData[key])
+		// }
 
 		for (var pair of formData.entries()) {
 			console.log(pair);

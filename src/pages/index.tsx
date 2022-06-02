@@ -16,7 +16,9 @@ import { Position } from "./position/Position";
 import { Service } from "./service/Service";
 import { Login } from "./login/Login";
 import { Jobs } from "./jobs/Jobs";
-import Blog from "./blog/Blog";
+import Blog from "./Blog/Blog";
+// import Blogs from "./blogs/Blogs"
+import { Blogs } from "./blogs/Blogs"
 const Index = () => {
 
   const pathname = ["",]
@@ -151,6 +153,14 @@ const Index = () => {
           exact={true}
           path="/blog"
           component={Blog}
+
+          isPrivateRoute={false}
+        />
+
+        <RouteWrapper
+          exact={true}
+          path="/blogs"
+          component={Blogs}
 
           isPrivateRoute={false}
         />
