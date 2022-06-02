@@ -84,8 +84,8 @@ export const ApiPost = (type: string, userData: any) => {
                     window.location.href = "/"
                 }
                 if (error && error.hasOwnProperty('response') &&
-                error.response && error.response.hasOwnProperty('data') && error.response.data &&
-                error.response.data.hasOwnProperty('error') && error.response.data.error) {
+                    error.response && error.response.hasOwnProperty('data') && error.response.data &&
+                    error.response.data.hasOwnProperty('error') && error.response.data.error) {
                     reject(error.response.data.error);
                 } else {
                     reject(error);
@@ -122,7 +122,7 @@ export const ApiPostNoAuth = (type: string, userData: any) => {
 export const ApiPatch = (type: String, userData: any) => {
     const s = type.includes('?') ? '&' : '?';
     return new Promise((resolve, reject) => {
-        axios.patch(`${BaseURL}${type}${s}lang=${AuthStorage.getLang()}`, userData, getHttpOptions())
+        axios.patch(`${BaseURL}${type}${s}`, userData, getHttpOptions())
             .then((responseJson: apiResponse) => {
                 resolve(responseJson);
             })
@@ -143,7 +143,7 @@ export const ApiPatch = (type: String, userData: any) => {
 }
 
 
-export const ApiDelete = (type: string, userData: any) => {
+export const ApiDelete = (type: string, userData: any = {}) => {
     const s = type.includes('?') ? '&' : '?';
     return new Promise((resolve, reject) => {
         axios.delete(`${BaseURL}${type}${s}lang=${AuthStorage.getLang()}`, getHttpOptions())
@@ -199,12 +199,15 @@ export const getHttpOptions = (options = defaultHeaders) => {
     };
 
     if (options.hasOwnProperty('isAuth') && options.isAuth) {
-        headers['Authorization'] = AuthStorage.getToken() ?? "";
+        // headers['Authorization'] = AuthStorage.getToken() ?? "";
+        headers['Authorization'] = 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkFkbWluIiwiaWF0IjoxNjUzMDUwNTc1LCJleHAiOjE2NTU2NDI1NzV9.Be48SgMRSg_E8Uwye85fE29Qm1SRf5LWEteTTrGus40' ?? "";
     }
 
     if (options.hasOwnProperty('isJsonRequest') && options.isJsonRequest) {
         headers['Content-Type'] = 'application/json';
     }
+
+
 
     if (options.hasOwnProperty('AdditionalParams') && options.AdditionalParams) {
         headers = { ...headers, ...options.AdditionalParams };
