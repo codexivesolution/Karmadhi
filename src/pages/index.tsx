@@ -17,6 +17,7 @@ import { Service } from "./service/Service";
 import { Login } from "./login/Login";
 import { Jobs } from "./jobs/Jobs";
 import Blog from "./Blog/Blog";
+import { Resume } from "./Resume/Resume";
 // import Blogs from "./blogs/Blogs"
 import { Blogs } from "./blogs/Blogs"
 const Index = () => {
@@ -172,14 +173,16 @@ const Index = () => {
 
           isPrivateRoute={false}
         />
-
-        {/* <RouteWrapper
+        <RouteWrapper
           exact={true}
-          path="/projectGetData"
-          component={ProjectGetData}
+          path="/resume"
+          component={Resume}
 
           isPrivateRoute={false}
-        /> */}
+        />
+
+
+
       </Switch>
     </>
   );

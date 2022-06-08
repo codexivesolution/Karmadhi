@@ -428,118 +428,116 @@ export const EmployesData = () => {
 						<span>emailId</span>  <input type='text' id='emailId' value={employData.emailId} onChange={onchange} /><br></br>
 						<button onClick={() => { UpadateData(employData.id) }}>UpaDate</button><br></br>
 					</>
-					: ""
-			}
-			{/* <h1>uuuu</h1> */}
-			{/* <form encType="multipart/form-data" action=""> */}
-			<span>Name</span>   <input type='text' id='name' value={addData.name} onChange={handelChange} />
-			{errorMsg.name && <span>{errorMsg.name}</span>}
-
-			<br></br>
-			<span>AboutMe</span>   <input type='text' id='aboutMe' value={addData.aboutMe} onChange={handelChange} />
-			{errorMsg.aboutMe && <span>{errorMsg.aboutMe}</span>}
-
-			<br></br>
-			<span>Gender</span>   <input type='radio' id='gender' value='male' name='gender' onChange={handelChange} /><span>Male</span>
-			<input type='radio' id='gender' value='female' name='gender' onChange={handelChange} /><span>Female</span>
-			<br></br>{errorMsg.gender && <span>{
-
-
-				errorMsg.gender}</span>}
-
-			<br></br>
-			<span>Position</span>  <select id='position' value={employData.position} onChange={handelChange}>
-				{
-					certificationData.map((certificationData: any) => (
-
-						<option value={certificationData._id}>{certificationData.name}</option>
-
-
-					))
-				}
-			</select>
-			{errorMsg.position && <span>{errorMsg.position}</span>}
-
-			<br></br>
-			<span>EmailId</span>  <input type='text' id='emailId' value={addData.emailId} onChange={handelChange} />
-			{errorMsg.emailId && <span>{errorMsg.emailId}</span>}
-
-			<br></br>
-
-			<span>instagram</span>  <input type='text' id='instagram' value={addData.socialLinks.instagram} onChange={handelChange} />
-			{errorMsg.socialLinks.instagram && <span>{errorMsg.socialLinks.instagram}</span>}
-
-			<br></br>
-
-			<span>linkedIn</span>  <input type='text' id='linkedIn' value={addData.socialLinks.linkedIn} onChange={handelChange} />
-			{errorMsg.socialLinks.linkedIn && <span>{errorMsg.socialLinks.linkedIn}</span>}
-
-			<br></br>
-
-			<span>skype</span>  <input type='text' id='skype' value={addData.socialLinks.skype} onChange={handelChange} />
-			{errorMsg.socialLinks.skype && <span>{errorMsg.socialLinks.skype}</span>}
-
-			<br></br>
-
-			<span>telegram</span>  <input type='text' id='telegram' value={addData.socialLinks.telegram} onChange={handelChange} />
-			{errorMsg.socialLinks.telegram && <span>{errorMsg.socialLinks.telegram}</span>}
-
-			<br></br>
-			{
-				addData.technologies.map((technologiesData: any, index: any) =>
-
-				(
+					:
 					<>
-						{/* <span>technologyName</span>  <input type='text' id='technologyName' value={technologiesData.technologyName} onChange={(e) => { handelChanged(e, index) }} /><br></br> */}
-
-
-						<span>technologyName</span>  <select id='technologyId' value={technologiesData.technologyId} onChange={(e) => { handelChanged(e, index) }} >
-							{
-								techanologyData.map((techanologyData: any) => (
-
-									<option value={techanologyData._id}>{techanologyData.name}</option>
-
-
-								))
-							}
-
-						</select>
-
+						<span>Name</span>   <input type='text' id='name' value={addData.name} onChange={handelChange} />
+						{errorMsg.name && <span>{errorMsg.name}</span>}
 
 						<br></br>
+						<span>AboutMe</span>   <input type='text' id='aboutMe' value={addData.aboutMe} onChange={handelChange} />
+						{errorMsg.aboutMe && <span>{errorMsg.aboutMe}</span>}
 
-						<span>stars</span>  <input type='number' id='stars' value={technologiesData.stars} onChange={(e) => { handelChanged(e, index) }} /><br></br>
+						<br></br>
+						<span>Gender</span>   <input type='radio' id='gender' value='male' name='gender' onChange={handelChange} /><span>Male</span>
+						<input type='radio' id='gender' value='female' name='gender' onChange={handelChange} /><span>Female</span>
+						<br></br>{errorMsg.gender && <span>{
 
-					</>
-				)
-				)
-			}
-			{/* <button onClick={upadateTechnologiesData}>Upadate TechnologiesData</button><br></br> */}
 
-			<button onClick={addTechnologiesData}>Add TechnologiesData</button><br></br>
+							errorMsg.gender}</span>}
 
-			{
-				addData.certifications.map((certifictionsData: any, index: any) =>
-				(
-					<>
-						{/* <span>certificateName</span>  <input type='text' id='certificateName' value={certifictionsData.certificateName} onChange={(e) => { handelChangedcertificatData(e, index) }} /><br></br> */}
-
-						<span>certificateName</span>  <select id='certificateId' value={certifictionsData.certificateId} onChange={(e) => { handelChangedcertificatData(e, index) }} >
+						<br></br>
+						<span>Position</span>  <select id='position' value={employData.position} onChange={handelChange}>
 							{
-								positionDatas.map((positioninformation: any) => (
+								certificationData.map((certificationData: any) => (
 
-									<option value={positioninformation._id}>{positioninformation.name}</option>
+									<option value={certificationData._id}>{certificationData.name}</option>
 
 
 								))
 							}
 						</select>
+						{errorMsg.position && <span>{errorMsg.position}</span>}
+
+						<br></br>
+						<span>EmailId</span>  <input type='text' id='emailId' value={addData.emailId} onChange={handelChange} />
+						{errorMsg.emailId && <span>{errorMsg.emailId}</span>}
 
 						<br></br>
 
-						<span>date</span>  <input type='date' id='complitionDate' value={certifictionsData.complitionDate} onChange={(e) => { handelChangedcertificatData(e, index) }} /> <br></br>
-						<>
-							{/* <input
+						<span>instagram</span>  <input type='text' id='instagram' value={addData.socialLinks.instagram} onChange={handelChange} />
+						{errorMsg.socialLinks.instagram && <span>{errorMsg.socialLinks.instagram}</span>}
+
+						<br></br>
+
+						<span>linkedIn</span>  <input type='text' id='linkedIn' value={addData.socialLinks.linkedIn} onChange={handelChange} />
+						{errorMsg.socialLinks.linkedIn && <span>{errorMsg.socialLinks.linkedIn}</span>}
+
+						<br></br>
+
+						<span>skype</span>  <input type='text' id='skype' value={addData.socialLinks.skype} onChange={handelChange} />
+						{errorMsg.socialLinks.skype && <span>{errorMsg.socialLinks.skype}</span>}
+
+						<br></br>
+
+						<span>telegram</span>  <input type='text' id='telegram' value={addData.socialLinks.telegram} onChange={handelChange} />
+						{errorMsg.socialLinks.telegram && <span>{errorMsg.socialLinks.telegram}</span>}
+
+						<br></br>
+						{
+							addData.technologies.map((technologiesData: any, index: any) =>
+
+							(
+								<>
+									{/* <span>technologyName</span>  <input type='text' id='technologyName' value={technologiesData.technologyName} onChange={(e) => { handelChanged(e, index) }} /><br></br> */}
+
+
+									<span>technologyName</span>  <select id='technologyId' value={technologiesData.technologyId} onChange={(e) => { handelChanged(e, index) }} >
+										{
+											techanologyData.map((techanologyData: any) => (
+
+												<option value={techanologyData._id}>{techanologyData.name}</option>
+
+
+											))
+										}
+
+									</select>
+
+
+									<br></br>
+
+									<span>stars</span>  <input type='number' id='stars' value={technologiesData.stars} onChange={(e) => { handelChanged(e, index) }} /><br></br>
+
+								</>
+							)
+							)
+						}
+						{/* <button onClick={upadateTechnologiesData}>Upadate TechnologiesData</button><br></br> */}
+
+						<button onClick={addTechnologiesData}>Add TechnologiesData</button><br></br>
+
+						{
+							addData.certifications.map((certifictionsData: any, index: any) =>
+							(
+								<>
+									{/* <span>certificateName</span>  <input type='text' id='certificateName' value={certifictionsData.certificateName} onChange={(e) => { handelChangedcertificatData(e, index) }} /><br></br> */}
+
+									<span>certificateName</span>  <select id='certificateId' value={certifictionsData.certificateId} onChange={(e) => { handelChangedcertificatData(e, index) }} >
+										{
+											positionDatas.map((positioninformation: any) => (
+
+												<option value={positioninformation._id}>{positioninformation.name}</option>
+
+
+											))
+										}
+									</select>
+
+									<br></br>
+
+									<span>date</span>  <input type='date' id='complitionDate' value={certifictionsData.complitionDate} onChange={(e) => { handelChangedcertificatData(e, index) }} /> <br></br>
+									<>
+										{/* <input
                                                 name=""
                                                 value=""
                                                 type="file"
@@ -554,20 +552,21 @@ export const EmployesData = () => {
                                           <label htmlFor='actual-btn' className='ChooseBtn'>
                                                 <img src='./img/ChoseFile.svg' />
                                           </label> */}
-						</>
-						{/* <br></br> */}
+									</>
+									{/* <br></br> */}
 
+								</>
+							)
+							)
+						}
+						{/* </form> */}
+						{/* <button onClick={upadateCertifictionsData}>Upadate CertifictionsData</button><br></br> */}
+
+						<button onClick={addCertifictionsData}>Add CertifictionsData</button><br></br>
+						<button onClick={addInformation}>Add Data</button>
 					</>
-				)
-				)
+
 			}
-			{/* </form> */}
-			{/* <button onClick={upadateCertifictionsData}>Upadate CertifictionsData</button><br></br> */}
-
-			<button onClick={addCertifictionsData}>Add CertifictionsData</button><br></br>
-			<button onClick={addInformation}>Add Data</button>
-
-
 			{/* <input type='date' /> */}
 
 			{

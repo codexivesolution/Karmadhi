@@ -54,3 +54,7 @@ export const transporTation = (keyword: string) => {
   // @ts-ignore
   return Object.keys(transportation).includes(keyword) ? transportation[keyword] : keyword
 }
+
+export const bool = (value: string) => {
+  return JSON.parse(value)
+}
